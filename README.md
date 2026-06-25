@@ -1,38 +1,110 @@
 # Brandon's AI Skills Library
 
-A comprehensive repository of custom AI Agent Skills covering various platforms, tools, plugins, and workflows. These skills are designed to enhance the capabilities of AI coding assistants (like Gemini, Claude, and Cursor) by providing them with deep, specific domain knowledge.
+A comprehensive repository of custom AI Agent Skills covering platforms, tools, plugins, and workflows. These skills enhance AI coding assistants (Gemini/Antigravity, Claude, Cursor) with deep domain knowledge.
 
-Currently, this repository contains **190+ skills** organized into logical categories.
-
-## 📂 Repository Structure
-
-The skills are organized into the following main directories:
-
-*   **/filevine/** - Skills for the Filevine legal case management platform (Reporting, Project Management, API).
-*   **/localwp/** - Skills for managing LocalWP development environments (Blueprints, Live Links, Xdebug, MCP).
-*   **/wordpress-com/** - Skills for the WordPress.com Developer ecosystem (Studio, Blueprints, MCP, REST API, Webhooks).
-*   **/wordpress-plugins/** - Extensive library of skills for popular WordPress plugins (Jetpack, Yoast, Elementor, Gravity Forms, WooCommerce, etc.).
-*   **/wordpress/** - Core WordPress development skills (Theme development, Block API).
-*   **/zimaboard-casaos/** - Skills for managing CasaOS on ZimaBoard hardware.
-*   **/cloudflare/** - Cloudflare routing and caching configurations.
-*   **/astro-seo/** - Astro framework SEO best practices.
-*   *(And many more...)*
+**33 skill groups | 190+ individual skills | 7 Antigravity plugins | 6 project profiles**
 
 ---
 
-## 🤖 How to Provide Specific Skills to AI Agents
+## 🔌 Antigravity Plugins (Auto-Loaded)
 
-You don't want to load all 190+ skills into every project; doing so would bloat the AI's context window. Instead, you can configure your AI assistants to pull **only the skills necessary** for the specific project you are working on.
+The easiest way to use these skills in Antigravity is via the pre-built plugins installed in `~/.gemini/config/plugins/`. These are automatically discovered and can be enabled globally or per-project.
 
-Here is how to do this depending on the AI tool you are using:
+| Plugin | Skills Included | Install Path |
+|---|---|---|
+| `brandon-wordpress-plugin` | WordPress core, WordPress.com, 52+ WP plugins | `~/.gemini/config/plugins/brandon-wordpress-plugin/` |
+| `brandon-cloudflare-plugin` | Cloudflare routing/caching, Kumo UI (components, charts, styling) | `~/.gemini/config/plugins/brandon-cloudflare-plugin/` |
+| `brandon-seo-plugin` | Astro SEO, Google Search Central, Search Console, Unlighthouse | `~/.gemini/config/plugins/brandon-seo-plugin/` |
+| `brandon-analytics-plugin` | Google Analytics, Looker Studio, Google Ads API, CallRail | `~/.gemini/config/plugins/brandon-analytics-plugin/` |
+| `brandon-crm-plugin` | Filevine, LeadDocket, RingCentral, CallRail | `~/.gemini/config/plugins/brandon-crm-plugin/` |
+| `brandon-dev-tools-plugin` | GitHub, 1Password, Chrome DevTools MCP, Chrome Extensions | `~/.gemini/config/plugins/brandon-dev-tools-plugin/` |
+| `brandon-services-plugin` | Kinsta, LocalWP, Gravatar, SendGrid, Zapier, ClickCease, ZimaBoard | `~/.gemini/config/plugins/brandon-services-plugin/` |
 
-### 1. Google Gemini (DeepMind Agentic Coding)
+---
 
-Gemini agents natively support custom skill manifests. To load specific skills into a project, create a `skills.json` file inside an `.agents/` directory at the root of your project:
+## 📦 Project Profiles (Drop-In `skills.json`)
 
-**File Path:** `YOUR-PROJECT/.agents/skills.json`
+For per-project skill loading, copy a profile from `/profiles/` into your project's `.agents/` directory as `skills.json`.
 
-**Contents:**
+```bash
+# Example: activate WordPress skills for a project
+cp /Users/bhubbard/PROJECTS/brandon-skills/profiles/wordpress-full.json YOUR_PROJECT/.agents/skills.json
+```
+
+| Profile | Skills Loaded |
+|---|---|
+| `profiles/wordpress-full.json` | WordPress + WordPress.com + all WP plugins |
+| `profiles/cloudflare-full.json` | Cloudflare + Kumo UI |
+| `profiles/seo-audit.json` | SEO + Search Console + Unlighthouse + GA |
+| `profiles/client-crm.json` | Filevine + LeadDocket + RingCentral + CallRail |
+| `profiles/dev-tools.json` | GitHub + 1Password + Chrome DevTools + Extensions |
+| `profiles/all-skills.json` | Everything (use sparingly — large context) |
+
+---
+
+## 📂 All Skill Groups
+
+| Group | Description |
+|---|---|
+| `1password` | 1Password secrets management, CLI, SDKs |
+| `astro-seo` | SEO best practices in Astro framework |
+| `callrail` | CallRail call tracking API and integrations |
+| `chrome-devtools-mcp` | Chrome DevTools via MCP server |
+| `chrome-extensions` | Chrome Extensions (Manifest V3) |
+| `clickcease` | ClickCease click fraud protection |
+| `cloudflare` | Cloudflare routing, caching, Workers |
+| `emdash-github-actions` | GitHub Actions via Emdash |
+| `filevine` | Filevine legal case management API |
+| `github` | GitHub API, PRs, Actions, CLI |
+| `gmail-postmaster` | Gmail Postmaster Tools — deliverability |
+| `google-ads-api` | Google Ads API integration |
+| `google-analytics` | Google Analytics 4 — setup, reporting |
+| `google-looker-studio` | Looker Studio dashboards and connectors |
+| `google-search-central` | Google Search Central documentation |
+| `google-search-console` | Search Console API and workflows |
+| `gravatar` | Gravatar profile and image APIs |
+| `isitagentready` | IsItAgentReady.com agent compatibility checks |
+| `kinsta` | Kinsta hosting — deployments, caching, CLI |
+| `kumo-ui` | Kumo UI component library by Cloudflare |
+| `leaddocket` | LeadDocket legal lead management |
+| `localwp` | LocalWP — local WordPress development |
+| `privacy-laws` | GDPR, CCPA, and privacy law compliance |
+| `ringcentral` | RingCentral business communications API |
+| `sendgrid` | SendGrid transactional email API |
+| `specification-website` | Specification website patterns |
+| `uc-berkeley` | UC Berkeley-related skills |
+| `unlighthouse` | Unlighthouse site-wide Lighthouse auditing |
+| `wordpress` | WordPress core — themes, blocks, plugins |
+| `wordpress-com` | WordPress.com Developer API and tools |
+| `wordpress-plugins` | 52+ individual WordPress plugin skills |
+| `zapier` | Zapier automation and Zap building |
+| `zimaboard-casaos` | ZimaBoard hardware + CasaOS setup |
+
+---
+
+## 🤖 Using Skills by Tool
+
+### Antigravity (Gemini)
+
+**Option 1: Plugin (Recommended)**
+Plugins in `~/.gemini/config/plugins/` are auto-discovered globally. All 7 `brandon-*` plugins are installed.
+
+**Option 2: Per-Project Profile**
+Create `.agents/skills.json` in your project root:
+```json
+{
+  "entries": [
+    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress" }
+  ]
+}
+```
+Or use a pre-built profile:
+```bash
+cp /Users/bhubbard/PROJECTS/brandon-skills/profiles/wordpress-full.json .agents/skills.json
+```
+
+**Option 3: Custom skills.json**
+Mix and match specific skill directories:
 ```json
 {
   "entries": [
@@ -41,29 +113,79 @@ Gemini agents natively support custom skill manifests. To load specific skills i
   ]
 }
 ```
-When Gemini starts up in that project, it will automatically discover and load *only* the skills found in those specific directories.
 
-### 2. Cursor / Claude / GitHub Copilot
+---
 
-Other AI assistants (like Cursor, Claude, or Copilot) do not yet natively support the `skills.json` manifest. For these tools, you have two primary options:
+### Claude Code
 
-**Option A: The `.cursorrules` Approach (Recommended for Cursor)**
-You can use your project's `.cursorrules` file to instruct the AI to reference specific files in this repository before taking action. 
-*Example `.cursorrules`:*
-> "Before writing any code related to WordPress.com, you MUST read the documentation stored in `/Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress-com/wpcom-rest-api-reference/SKILL.md`."
+**Option 1: `@` Mention a SKILL.md directly**
+In any Claude conversation:
+> `@/Users/bhubbard/PROJECTS/brandon-skills/skills/filevine/SKILL.md Read this skill, then help me with...`
 
-**Option B: The Local Copy Approach**
-If the AI cannot access files outside of the immediate workspace, you can copy the specific `SKILL.md` files you need directly into your project repository (e.g., inside an `.ai-docs/` or `.cursor/` folder).
+**Option 2: Copy profile to project**
+```bash
+cp /Users/bhubbard/PROJECTS/brandon-skills/profiles/client-crm.json .agents/skills.json
+```
+Claude Code respects `.agents/skills.json` in project directories.
 
-**Option C: The Context Mention Approach**
-In Cursor or Claude, simply use the `@` feature in chat (e.g., `@/Users/bhubbard/PROJECTS/brandon-skills/skills/localwp/localwp-mcp-integration/SKILL.md`) and say: *"Read this skill document, then complete my task according to its rules."*
+**Option 3: CLAUDE.md reference**
+Add to your project's `CLAUDE.md`:
+```markdown
+Before working with WordPress, read: /Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress/SKILL.md
+```
+
+---
+
+### Cursor / GitHub Copilot
+
+**Option A: `.cursorrules` reference**
+```
+Before writing any WordPress code, read: /Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress/SKILL.md
+```
+
+**Option B: `@` mention in chat**
+```
+@/Users/bhubbard/PROJECTS/brandon-skills/skills/cloudflare/SKILL.md
+```
+
+**Option C: Copy skill file into project**
+```bash
+mkdir -p .ai-docs
+cp /Users/bhubbard/PROJECTS/brandon-skills/skills/kumo-ui/kumo-ui-components/SKILL.md .ai-docs/
+```
 
 ---
 
 ## 🛠️ Anatomy of a Skill
 
-Each skill resides in its own directory and contains a primary `SKILL.md` file. 
+```
+skills/<group>/
+└── <skill-name>/
+    └── SKILL.md          # Required: YAML frontmatter + markdown body
+    └── references/       # Optional: extended docs
+    └── examples/         # Optional: code examples
+```
 
-The `SKILL.md` file consists of:
-1.  **YAML Frontmatter**: Defines the `name` and `description` of the skill so the AI knows when to trigger it.
-2.  **Markdown Body**: The actual instructions, rules, constraints, and context the AI needs to follow.
+`SKILL.md` structure:
+```yaml
+---
+name: skill-name
+description: What the skill covers and when to trigger it.
+---
+
+# Skill Title
+...instructions...
+```
+
+---
+
+## 🏗️ Kumo UI Skills
+
+Three new skills for the Cloudflare Kumo UI component library (v2.6.0):
+
+| Skill | Path | Covers |
+|---|---|---|
+| `kumo-ui-components` | `skills/kumo-ui/kumo-ui-components/` | 34+ components, import patterns, recipes |
+| `kumo-ui-charts` | `skills/kumo-ui/kumo-ui-charts/` | TimeseriesChart, SankeyChart, colors, legends |
+| `kumo-ui-styling` | `skills/kumo-ui/kumo-ui-styling/` | Semantic tokens, dark mode, Tailwind v4 setup |
+| `kumo-cli` | `skills/kumo-ui/kumo-cli/` | CLI commands (`ls`, `doc`, `add`) |
