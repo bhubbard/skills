@@ -1,6 +1,7 @@
 {
+  "_readme": "Replace <SKILLS_ROOT> with the absolute path to your brandon-skills clone, e.g. /home/you/brandon-skills",
   "entries": [
-    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/cloudflare" },
-    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/kumo-ui" }
+    { "path": "<SKILLS_ROOT>/skills/cloudflare" },
+    { "path": "<SKILLS_ROOT>/skills/kumo-ui" }
   ]
 }

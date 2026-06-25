@@ -1,7 +1,8 @@
 {
+  "_readme": "Replace <SKILLS_ROOT> with the absolute path to your brandon-skills clone, e.g. /home/you/brandon-skills",
   "entries": [
-    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress" },
-    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress-com" },
-    { "path": "/Users/bhubbard/PROJECTS/brandon-skills/skills/wordpress-plugins" }
+    { "path": "<SKILLS_ROOT>/skills/wordpress" },
+    { "path": "<SKILLS_ROOT>/skills/wordpress-com" },
+    { "path": "<SKILLS_ROOT>/skills/wordpress-plugins" }
   ]
 }
