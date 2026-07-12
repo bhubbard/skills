@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO REST API
+name: yoast-seo-rest-api
 description: "Using the Yoast REST API endpoints to fetch head metadata and SEO scores headlessly."
 ---
 

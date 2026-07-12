@@ -1,5 +1,5 @@
 ---
-name: Yoast Local SEO Widgets
+name: yoast-local-seo-widgets
 description: "Working with the store locator, opening hours, and Google Maps widgets."
 ---
 

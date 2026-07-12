@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Field Object
+name: gravity-forms-field-object
 description: "Deep dive into the properties of individual Field Objects."
 ---
 

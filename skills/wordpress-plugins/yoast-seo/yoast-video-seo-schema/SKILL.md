@@ -1,5 +1,5 @@
 ---
-name: Yoast Video SEO Schema
+name: yoast-video-seo-schema
 description: "Customizing the VideoObject schema output."
 ---
 

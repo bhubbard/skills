@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Field Framework
+name: gravity-forms-field-framework
 description: "Creating custom field types extending GF_Field."
 ---
 

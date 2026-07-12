@@ -1,5 +1,5 @@
 ---
-name: DSAR and Do Not Sell/Share Implementations
+name: dsar-and-opt-out
 description: Technical guidelines for implementing Data Subject Access Requests (DSARs) and "Do Not Sell or Share My Personal Information" workflows for CCPA/CPRA.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Payment Add-On Framework
+name: gravity-forms-payment-addon-framework
 description: "Creating payment gateways extending GFPaymentAddOn."
 ---
 

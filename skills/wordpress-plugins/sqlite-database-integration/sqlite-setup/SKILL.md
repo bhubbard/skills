@@ -1,5 +1,5 @@
 ---
-name: SQLite Setup
+name: sqlite-setup
 description: Setting up WordPress to use SQLite instead of MySQL.
 ---
 

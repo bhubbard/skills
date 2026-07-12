@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Blocks
+name: yoast-seo-blocks
 description: "Working with Yoast's structured data blocks (like Breadcrumbs, FAQ, How-to)."
 ---
 

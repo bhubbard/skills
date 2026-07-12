@@ -1,5 +1,5 @@
 ---
-name: Enable Debug Bar
+name: enable-debug-bar
 description: How to enable WP_DEBUG and SAVEQUERIES for the Debug Bar plugin.
 ---
 

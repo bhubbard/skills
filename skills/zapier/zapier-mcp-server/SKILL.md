@@ -1,5 +1,5 @@
 ---
-name: Zapier MCP Server Integration
+name: zapier-mcp-server
 description: Using the Zapier MCP (Model Context Protocol) Server to allow AI clients like Claude or Cursor to execute Zapier actions.
 ---
 

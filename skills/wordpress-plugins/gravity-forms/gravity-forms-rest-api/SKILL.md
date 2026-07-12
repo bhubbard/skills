@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms REST API
+name: gravity-forms-rest-api
 description: "Guides interaction with Gravity Forms from external clients via the REST API."
 ---
 

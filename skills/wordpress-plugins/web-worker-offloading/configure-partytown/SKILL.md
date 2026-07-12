@@ -1,5 +1,5 @@
 ---
-name: Configure Partytown
+name: configure-partytown
 description: Use the plwwo_configuration filter to configure Partytown for Web Worker Offloading.
 ---
 

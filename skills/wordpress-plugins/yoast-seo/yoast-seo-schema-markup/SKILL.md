@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Schema Markup Output
+name: yoast-seo-schema-markup
 description: "Deep dive into the default Schema pieces and how plugins output them."
 ---
 

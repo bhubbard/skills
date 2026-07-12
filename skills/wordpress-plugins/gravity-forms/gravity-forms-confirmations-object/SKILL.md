@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Confirmations Object
+name: gravity-forms-confirmations-object
 description: "Manipulating the Confirmations object programmatically."
 ---
 

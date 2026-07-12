@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Plugin Development
+name: yoast-seo-plugin-development
 description: "General best practices for building plugins that extend Yoast SEO."
 ---
 

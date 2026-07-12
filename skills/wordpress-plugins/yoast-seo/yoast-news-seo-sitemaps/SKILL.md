@@ -1,5 +1,5 @@
 ---
-name: Yoast News SEO Sitemaps
+name: yoast-news-seo-sitemaps
 description: "Filtering the Google News sitemap."
 ---
 

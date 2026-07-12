@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Theme Framework
+name: gravity-forms-theme-framework
 description: "Best practices for styling Gravity Forms and using the Theme Framework."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Constants
+name: gravity-forms-constants
 description: "Documentation on available constants in wp-config.php."
 ---
 

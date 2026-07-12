@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Metadata API
+name: yoast-seo-metadata-api
 description: "Interacting with the Metadata API (Indexables) for fetching and saving SEO data."
 ---
 

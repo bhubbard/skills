@@ -1,5 +1,5 @@
 ---
-name: Yoast WooCommerce SEO Filters
+name: yoast-woocommerce-seo-filters
 description: "Modifying product gallery image outputs, pricing metadata, and SKU/GTIN injection."
 ---
 

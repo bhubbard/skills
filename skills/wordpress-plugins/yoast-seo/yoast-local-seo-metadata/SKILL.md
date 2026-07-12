@@ -1,5 +1,5 @@
 ---
-name: Yoast Local SEO Metadata
+name: yoast-local-seo-metadata
 description: "Interacting with the specialized meta keys storing address and location data."
 ---
 

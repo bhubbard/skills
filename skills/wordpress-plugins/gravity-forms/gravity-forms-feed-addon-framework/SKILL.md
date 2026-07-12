@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Feed Add-On Framework
+name: gravity-forms-feed-addon-framework
 description: "Creating feed-based add-ons extending GFFeedAddOn."
 ---
 

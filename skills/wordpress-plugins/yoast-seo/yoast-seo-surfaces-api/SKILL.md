@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Surfaces API
+name: yoast-seo-surfaces-api
 description: "Interacting with the Surfaces API (PHP) to retrieve Yoast SEO data efficiently within WordPress."
 ---
 

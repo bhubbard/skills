@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Add-On Framework
+name: gravity-forms-addon-framework
 description: "Creating custom add-ons extending GFAddOn."
 ---
 

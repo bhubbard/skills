@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Entry Object
+name: gravity-forms-entry-object
 description: "Structure of the Entry Object, including accessing specific field values."
 ---
 

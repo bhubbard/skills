@@ -1,5 +1,5 @@
 ---
-name: Configure Akismet
+name: configure-akismet
 description: Guide to setting up and configuring the Akismet Anti-Spam plugin.
 ---
 

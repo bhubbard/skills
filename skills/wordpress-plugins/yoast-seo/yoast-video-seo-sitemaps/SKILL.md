@@ -1,5 +1,5 @@
 ---
-name: Yoast Video SEO Sitemaps
+name: yoast-video-seo-sitemaps
 description: "Hooking into the Video XML sitemap generation to include, exclude, or modify video entries."
 ---
 

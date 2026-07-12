@@ -1,5 +1,5 @@
 ---
-name: Resolve Common Warnings from Plugin Check
+name: resolve-common-warnings
 description: Address common warnings raised by the Plugin Check tool.
 ---
 

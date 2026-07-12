@@ -1,5 +1,5 @@
 ---
-name: CPRA/CCPA Cookie Consent Management
+name: cookie-consent-management
 description: Guidelines and technical implementation details for CPRA/CCPA compliant cookie consent banners and script management.
 ---
 

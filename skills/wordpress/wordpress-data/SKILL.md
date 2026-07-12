@@ -1,6 +1,6 @@
 ---
 name: wordpress-data
-description: Querying and manipulating WordPress data — posts, users, terms, options, transients, post/user/term/comment meta, and direct database access via $wpdb. Use when you need to write WP_Query / WP_User_Query / WP_Term_Query / WP_Comment_Query, work with the Options API, set up transients for caching, register or read custom meta, run raw SQL safely via $wpdb->prepare, or build queries that join custom tables.
+description: Querying and manipulating WordPress data — posts, users, terms, options, transients, post/user/term/comment meta, and direct database access via $wpdb. Use when you need to write WP_Query / WP_User_Query / WP_Term_Query / WP_Comment_Query, work with the Options API, set up transients for caching, register or read custom meta, run raw SQL safely via wpdb's prepare() method, or build queries that join custom tables.
 ---
 
 # WordPress Data & Queries

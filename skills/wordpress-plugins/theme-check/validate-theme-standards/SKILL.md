@@ -1,5 +1,5 @@
 ---
-name: Validate Theme Standards with Theme Check
+name: validate-theme-standards
 description: Use Theme Check to ensure a classic theme complies with WordPress.org review standards.
 ---
 

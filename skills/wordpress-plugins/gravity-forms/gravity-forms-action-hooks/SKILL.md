@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Action Hooks
+name: gravity-forms-action-hooks
 description: "Comprehensive guide on core actions like gform_after_submission."
 ---
 

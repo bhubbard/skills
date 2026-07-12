@@ -1,5 +1,5 @@
 ---
-name: Offload Script to Web Worker
+name: offload-script-to-worker
 description: Use wp_script_add_data to offload a registered script to a Web Worker via Partytown.
 ---
 

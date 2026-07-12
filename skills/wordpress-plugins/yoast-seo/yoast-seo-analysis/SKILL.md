@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Content Analysis
+name: yoast-seo-analysis
 description: "Understanding how the content analysis works and how to add custom analysis checks."
 ---
 

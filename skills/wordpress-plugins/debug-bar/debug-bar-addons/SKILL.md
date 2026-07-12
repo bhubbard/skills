@@ -1,5 +1,5 @@
 ---
-name: Debug Bar Addons
+name: debug-bar-addons
 description: Information about extending the Debug Bar plugin with add-ons.
 ---
 

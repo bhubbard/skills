@@ -1,5 +1,5 @@
 ---
-name: View Transitions Exclusions
+name: view-transitions-exclusions
 description: How to exclude view transitions or override theme defaults.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Enable Speculative Loading Without Pretty Permalinks
+name: enable-without-pretty-permalinks
 description: Force speculative loading on sites without pretty permalinks.
 ---
 

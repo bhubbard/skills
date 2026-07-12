@@ -1,5 +1,5 @@
 ---
-name: Troubleshooting Mode
+name: troubleshooting-mode
 description: Use Health Check to safely identify plugin or theme conflicts.
 ---
 

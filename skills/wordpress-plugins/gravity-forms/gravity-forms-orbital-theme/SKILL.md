@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Orbital Theme
+name: gravity-forms-orbital-theme
 description: "Deep dive into styling forms using the new Orbital Theme CSS API."
 ---
 

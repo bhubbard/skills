@@ -1,5 +1,5 @@
 ---
-name: Create SCF Fields
+name: create-scf-fields
 description: Register and display custom fields using Secure Custom Fields.
 ---
 

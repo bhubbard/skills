@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Data Objects
+name: gravity-forms-data-objects
 description: "Guides the usage and manipulation of core Gravity Forms Data Objects."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Tags
+name: yoast-seo-tags
 description: "Modifying Title tags, Meta descriptions, Canonical URLs, and Meta robots tags via Yoast's specific filters."
 ---
 

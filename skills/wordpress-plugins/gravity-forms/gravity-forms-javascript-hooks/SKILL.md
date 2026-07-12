@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms JavaScript Hooks
+name: gravity-forms-javascript-hooks
 description: "Utilizing frontend JS events like gform_post_render."
 ---
 

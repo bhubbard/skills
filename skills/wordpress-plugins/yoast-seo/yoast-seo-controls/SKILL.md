@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Controls
+name: yoast-seo-controls
 description: "Extending or modifying the Yoast SEO meta box and sidebar controls."
 ---
 

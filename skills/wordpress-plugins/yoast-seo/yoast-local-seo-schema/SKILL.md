@@ -1,5 +1,5 @@
 ---
-name: Yoast Local SEO Schema
+name: yoast-local-seo-schema
 description: "Modifying the injected LocalBusiness schema and tying it into the main Yoast graph."
 ---
 

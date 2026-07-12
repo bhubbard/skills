@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Database
+name: gravity-forms-database
 description: "Understanding the Gravity Forms database schema."
 ---
 

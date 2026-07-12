@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms REST API v2
+name: gravity-forms-rest-api-v2
 description: "Advanced guide on endpoints, authentication, and submitting data headlessly."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Export Theme Changes with Create Block Theme
+name: export-theme-changes
 description: Save and export user changes made to block themes using Create Block Theme.
 ---
 

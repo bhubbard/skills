@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Hooks
+name: gravity-forms-hooks
 description: "Instructions for utilizing Gravity Forms hooks (Actions, Filters, JavaScript) to modify default functionality."
 ---
 

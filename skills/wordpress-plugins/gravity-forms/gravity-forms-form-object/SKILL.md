@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Form Object
+name: gravity-forms-form-object
 description: "Detailed structure of the Form Object and how to manipulate its properties."
 ---
 

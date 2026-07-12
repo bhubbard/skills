@@ -1,5 +1,5 @@
 ---
-name: Yoast Duplicate Post
+name: yoast-seo-duplicate-post
 description: "Interacting with or extending the Yoast Duplicate Post plugin API."
 ---
 

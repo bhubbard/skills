@@ -1,5 +1,5 @@
 ---
-name: SCF REST API
+name: scf-rest-api
 description: Integrate Secure Custom Fields with the WordPress REST API.
 ---
 

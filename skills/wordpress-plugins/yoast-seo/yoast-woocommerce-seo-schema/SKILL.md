@@ -1,5 +1,5 @@
 ---
-name: Yoast WooCommerce SEO Schema
+name: yoast-woocommerce-seo-schema
 description: "Understanding how Yoast replaces WooCommerce schema."
 ---
 

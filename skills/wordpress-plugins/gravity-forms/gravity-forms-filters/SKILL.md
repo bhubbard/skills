@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Filters
+name: gravity-forms-filters
 description: "Comprehensive guide on gform_pre_render, validation filters, and modifying HTML."
 ---
 

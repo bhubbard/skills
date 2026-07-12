@@ -1,5 +1,5 @@
 ---
-name: SQLite Troubleshooting
+name: sqlite-troubleshooting
 description: Debug query compatibility issues with the SQLite plugin.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Run Plugin Checks via WP-CLI
+name: run-wp-cli-checks
 description: Use the WP-CLI command from the Plugin Check plugin to validate WordPress plugins.
 ---
 

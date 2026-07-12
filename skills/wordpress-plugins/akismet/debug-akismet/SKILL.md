@@ -1,5 +1,5 @@
 ---
-name: Debug Akismet
+name: debug-akismet
 description: Troubleshoot issues with Akismet spam detection and false positives.
 ---
 

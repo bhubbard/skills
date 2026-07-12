@@ -1,5 +1,5 @@
 ---
-name: Global Privacy Control (GPC) Implementation
+name: global-privacy-control
 description: How to detect and honor the Global Privacy Control (GPC) signal for CPRA/CCPA compliance on the web.
 ---
 

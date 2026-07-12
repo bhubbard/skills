@@ -1,13 +1,6 @@
 ---
 name: turnstile-spin
-description: Set up Cloudflare Turnstile end-to-end in a project — scan the codebase, create the widget via the Cloudflare API, deploy the managed siteverify Worker, write the frontend snippets, validate, and persist the skill. Load this when a user asks to add Turnstile, set up CAPTCHA, protect a form from bots, or fix a Turnstile integration. Mirrors developers.cloudflare.com/turnstile/spin.
-references:
-  - vanilla-html
-  - nextjs-app
-  - nextjs-pages
-  - astro
-  - sveltekit
-  - hugo
+description: Set up Cloudflare Turnstile end-to-end in a project — scan the codebase, create the widget via the Cloudflare API, deploy the managed siteverify Worker, write the frontend snippets, validate, and persist the skill. Load this when a user asks to add Turnstile, set up CAPTCHA, protect a form from bots, or fix a Turnstile integration. Mirrors developers.cloudflare.com/turnstile/spin. Framework-specific snippet syntax lives in references/ (vanilla-html, nextjs-app, nextjs-pages, astro, sveltekit, hugo) — read the matching one during the codebase scan step.
 ---
 
 # Turnstile Spin skill
@@ -51,7 +44,7 @@ The user pasted the prompt. You are in a multi-step dialog. Detect what you can,
 
 5. **Domain.** Always include `localhost` and `127.0.0.1`. For production, scan `package.json` `homepage`, `wrangler.toml`, `README.md`, `AGENTS.md`, git remote. Confirm: "I'll register for `localhost`, `127.0.0.1`, and `<domain>`. OK?" **[wait for user]** If no production domain is found, ask.
 
-6. **Codebase scan.** Detect framework + insertion candidates silently.
+6. **Codebase scan.** Detect framework + insertion candidates silently. Once the framework is known, read the matching file under `references/` for the exact widget/snippet syntax for that stack: `references/vanilla-html.md`, `references/nextjs-app.md` (App Router), `references/nextjs-pages.md` (Pages Router), `references/astro.md`, `references/sveltekit.md`, or `references/hugo.md`. Use the plain HTML snippet in `references/vanilla-html.md` as the fallback if the framework isn't one of these.
 
 7. **Insertion plan.** Show the candidate list with `[recommended]` / `[skip by default]` markers; ask the user to confirm (numbers, "all", "recommended", or a list). **[wait for user]** If an existing CAPTCHA was detected, present a migration plan instead (see "Migrating from another CAPTCHA").
 

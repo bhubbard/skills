@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Shopify Integration
+name: yoast-seo-shopify-integration
 description: "Working with Yoast SEO within the Shopify ecosystem."
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Exclude Speculative Loading
+name: exclude-speculative-loading
 description: Exclude specific URLs from being prefetched or prerendered using the Speculative Loading plugin.
 ---
 

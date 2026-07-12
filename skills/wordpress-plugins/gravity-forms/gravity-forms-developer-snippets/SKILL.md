@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Developer Snippets
+name: gravity-forms-developer-snippets
 description: "A curated collection of common developer snippets and best-practice patterns."
 ---
 

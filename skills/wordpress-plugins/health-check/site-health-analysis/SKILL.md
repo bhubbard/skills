@@ -1,5 +1,5 @@
 ---
-name: Site Health Analysis
+name: site-health-analysis
 description: Analyze debug information and system checks using Health Check.
 ---
 

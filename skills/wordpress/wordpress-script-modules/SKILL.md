@@ -1,6 +1,6 @@
 ---
 name: wordpress-script-modules
-description: WordPress Script Modules API (6.5+) — native ES module enqueueing with import maps. Use when shipping modern JS as ES modules (import/export), enqueuing the Interactivity API's view modules, building blocks whose viewScriptModule is in block.json, or migrating off classic wp_enqueue_script for new code. Distinct from classic scripts — uses wp_register_script_module / wp_enqueue_script_module and emits <script type="module"> with an import map.
+description: WordPress Script Modules API (6.5+) — native ES module enqueueing with import maps. Use when shipping modern JS as ES modules (import/export), enqueuing the Interactivity API's view modules, building blocks whose viewScriptModule is in block.json, or migrating off classic wp_enqueue_script for new code. Distinct from classic scripts — uses wp_register_script_module / wp_enqueue_script_module and emits a module-type script tag with an import map.
 ---
 
 # WordPress Script Modules (6.5+)

@@ -1,5 +1,5 @@
 ---
-name: Configure Provider Fallbacks with Vercel AI Gateway
+name: configure-provider-fallback
 description: Handle provider fallbacks using the Vercel AI Gateway in WordPress.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: Yoast Video SEO API
+name: yoast-video-seo-api
 description: "Forcing video re-indexing or retrieving video metadata programmatically."
 ---
 

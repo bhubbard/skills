@@ -1,5 +1,5 @@
 ---
-name: Integrate AI Models using Vercel AI Gateway
+name: integrate-ai-models
 description: Use Vercel AI Gateway Provider plugin to interact with multiple AI models through wp_ai_client_prompt.
 ---
 

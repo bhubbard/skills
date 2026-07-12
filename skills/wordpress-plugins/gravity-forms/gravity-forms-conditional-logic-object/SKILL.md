@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Conditional Logic Object
+name: gravity-forms-conditional-logic-object
 description: "Understanding and dynamically applying conditional logic rules."
 ---
 

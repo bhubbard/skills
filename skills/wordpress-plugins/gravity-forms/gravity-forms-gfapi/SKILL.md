@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms GFAPI
+name: gravity-forms-gfapi
 description: "Deep dive into the GFAPI class for programmatic CRUD operations on Forms and Entries."
 ---
 

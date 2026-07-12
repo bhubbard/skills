@@ -1,5 +1,5 @@
 ---
-name: Configure View Transitions
+name: configure-view-transitions
 description: Guidance on configuring view transition settings and custom animations in WordPress.
 ---
 

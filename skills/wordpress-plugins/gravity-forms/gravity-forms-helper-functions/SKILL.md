@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Helper Functions
+name: gravity-forms-helper-functions
 description: "Usage of built-in Gravity Forms PHP helper functions."
 ---
 

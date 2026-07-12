@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO WP-CLI Commands
+name: yoast-seo-wp-cli
 description: "Managing Yoast SEO and its add-ons via the command line using WP-CLI."
 ---
 

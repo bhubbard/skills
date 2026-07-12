@@ -1,5 +1,5 @@
 ---
-name: Zapier MCP Client Integration
+name: zapier-mcp-client
 description: Using Zapier as an MCP client to ingest external MCP servers into your Zapier workflows.
 ---
 

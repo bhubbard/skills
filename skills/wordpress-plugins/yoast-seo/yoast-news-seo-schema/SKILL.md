@@ -1,5 +1,5 @@
 ---
-name: Yoast News SEO Schema
+name: yoast-news-seo-schema
 description: "Hooking into the NewsArticle schema to customize fields."
 ---
 

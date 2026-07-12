@@ -1,5 +1,5 @@
 ---
-name: Create Child Theme with Create Block Theme
+name: create-child-theme
 description: Generate a child theme from an active block theme using the Create Block Theme plugin.
 ---
 

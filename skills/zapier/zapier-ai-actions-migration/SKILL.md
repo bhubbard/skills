@@ -1,5 +1,5 @@
 ---
-name: Zapier AI Actions to MCP Migration
+name: zapier-ai-actions-migration
 description: Guide for migrating from the deprecated Zapier AI Actions (Natural Language Actions) API to the new Zapier MCP standard.
 ---
 

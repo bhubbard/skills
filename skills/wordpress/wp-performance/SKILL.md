@@ -34,9 +34,11 @@ This skill assumes the agent cannot use a browser UI. Prefer WP-CLI, logs, and H
 2. Pick a reproducible target (URL or REST route) and capture a baseline:
    - TTFB/time with `curl` if possible
    - WP-CLI profiling if available
+   - Server-Timing headers if the Performance Lab plugin (or another Server-Timing source) is available — see `references/server-timing.md`
 
 Read:
 - `references/measurement.md`
+- `references/server-timing.md` (if Server-Timing headers are available on the target site)
 
 ### 1) Generate a backend-only performance report (deterministic)
 

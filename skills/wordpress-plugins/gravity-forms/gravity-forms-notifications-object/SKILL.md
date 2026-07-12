@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms Notifications Object
+name: gravity-forms-notifications-object
 description: "Manipulating the Notifications object programmatically."
 ---
 

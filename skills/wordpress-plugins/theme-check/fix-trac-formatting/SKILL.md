@@ -1,5 +1,5 @@
 ---
-name: Format Theme Check Output for Trac
+name: fix-trac-formatting
 description: Configure Theme Check to format output for Trac tickets during theme reviews.
 ---
 

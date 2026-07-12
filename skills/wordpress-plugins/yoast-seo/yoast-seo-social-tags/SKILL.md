@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Social Tags
+name: yoast-seo-social-tags
 description: "Customizing OpenGraph (Facebook) and X (Twitter) meta tags."
 ---
 

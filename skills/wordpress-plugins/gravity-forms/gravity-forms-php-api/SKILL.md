@@ -1,5 +1,5 @@
 ---
-name: Gravity Forms PHP API
+name: gravity-forms-php-api
 description: "Provides best practices and references for using the Gravity Forms PHP API to interact with forms on the same server."
 ---
 

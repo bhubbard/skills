@@ -1,5 +1,5 @@
 ---
-name: Yoast SEO Schema API
+name: yoast-seo-schema-api
 description: "Adding, removing, or modifying pieces in Yoast's Schema.org graph."
 ---
 

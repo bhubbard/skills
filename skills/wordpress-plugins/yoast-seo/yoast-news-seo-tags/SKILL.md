@@ -1,5 +1,5 @@
 ---
-name: Yoast News SEO Tags
+name: yoast-news-seo-tags
 description: "Modifying specific News meta tags like news_keywords and standalone robots tags."
 ---
 
