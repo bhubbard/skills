@@ -1,5 +1,5 @@
 ---
-name: gravatar-email-hash
+name: email-hash
 description: Generates the foundational SHA256 email hash required for all Gravatar API operations (avatars and profiles).
 ---
 

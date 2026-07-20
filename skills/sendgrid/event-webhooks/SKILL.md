@@ -1,5 +1,5 @@
 ---
-name: sendgrid-event-webhooks
+name: event-webhooks
 description: Use this skill when the user wants to handle SendGrid Event Webhooks to track email delivery and engagement.
 ---
 

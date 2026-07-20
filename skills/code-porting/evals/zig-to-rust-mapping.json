@@ -1,0 +1,20 @@
+[
+  {"query": "what's the Rust equivalent of Zig's defer and errdefer for cleanup?", "should_trigger": true},
+  {"query": "I'm mechanically translating .zig files to .rs — how do I map tagged unions, error unions, and optionals?", "should_trigger": true},
+  {"query": "how do I port Zig comptime to Rust? const generics or macros?", "should_trigger": true},
+  {"query": "building a PORTING.md for a Zig-to-Rust port, need the construct-by-construct type mappings", "should_trigger": true},
+  {"query": "how does Zig's allocator-passing style map to Rust ownership types?", "should_trigger": true},
+  {"query": "translating a Zig union(enum) to Rust — what's the idiomatic mapping and what doesn't translate 1:1?", "should_trigger": true},
+  {"query": "how do I convert Zig's ?T and !T and try into Rust?", "should_trigger": true},
+  {"query": "what's the Rust equivalent of @ptrCast and @bitCast from Zig, and what should I watch out for?", "should_trigger": true},
+  {"query": "what are the semantic gotchas where Zig and Rust look identical but behave differently, like assert being erased in release?", "should_trigger": false},
+  {"query": "how do I decide the lifetime and owner for each struct field when porting to Rust?", "should_trigger": false},
+  {"query": "give me the full playbook for rewriting our codebase in Rust", "should_trigger": false},
+  {"query": "how do I split my ported Rust code into crates?", "should_trigger": false},
+  {"query": "teach me Zig from scratch", "should_trigger": false},
+  {"query": "write me a linked list in Rust", "should_trigger": false},
+  {"query": "convert this TypeScript interface to a Go struct", "should_trigger": false},
+  {"query": "review this ported diff for correctness bugs", "should_trigger": false},
+  {"query": "how do I get my ported test suite green in CI?", "should_trigger": false},
+  {"query": "explain what an enum is in programming", "should_trigger": false}
+]

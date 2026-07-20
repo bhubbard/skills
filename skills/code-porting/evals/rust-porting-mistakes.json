@@ -1,0 +1,20 @@
+[
+  {"query": "what specific regressions should I expect porting Zig or C to Rust — like debug_assert erasing side effects?", "should_trigger": true},
+  {"query": "our ported Rust breaks in release but works in debug. I think it's a debug_assert with a side effect inside. is that a known trap?", "should_trigger": true},
+  {"query": "bytemuck::cast_slice is panicking on an odd-length buffer that the old Zig code tolerated. how do I handle that in the port?", "should_trigger": true},
+  {"query": "we ported a comptime format string to a Rust function and now color markers are eating characters in the arguments. why?", "should_trigger": true},
+  {"query": "give me the catalog of real Rust-target porting bugs to hand to my reviewers", "should_trigger": true},
+  {"query": "our Zig ReleaseFast had no bounds checks but Rust release panics on an index — is this a common porting mistake?", "should_trigger": true},
+  {"query": "unwrap_or is panicking even when the value is Some after we ported this. what happened?", "should_trigger": true},
+  {"query": "why did HMR break only in release builds after we moved the dev server code to Rust?", "should_trigger": true},
+  {"query": "what are the language-agnostic 'looks identical but behaves differently' categories to watch for in any port?", "should_trigger": false},
+  {"query": "how do I map Zig comptime to Rust const generics or macros?", "should_trigger": false},
+  {"query": "review this specific diff and find the bug for me", "should_trigger": false},
+  {"query": "explain the difference between debug and release builds in Rust generally", "should_trigger": false},
+  {"query": "what does the ? operator do in Rust?", "should_trigger": false},
+  {"query": "my Rust program panics with index out of bounds in my normal app, help me fix it", "should_trigger": false},
+  {"query": "how do I add lifetimes to escaping pointers during the port?", "should_trigger": false},
+  {"query": "give me the whole Rust rewrite playbook from start to finish", "should_trigger": false},
+  {"query": "how do I split into crates to avoid cyclic deps?", "should_trigger": false},
+  {"query": "how do I get the ported test suite passing on Windows CI?", "should_trigger": false}
+]

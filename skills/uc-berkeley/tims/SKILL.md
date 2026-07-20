@@ -1,5 +1,5 @@
 ---
-name: tims-crash-data
+name: tims
 description: "Guidelines for navigating and utilizing the Transportation Injury Mapping System (TIMS) by UC Berkeley SafeTREC."
 ---
 

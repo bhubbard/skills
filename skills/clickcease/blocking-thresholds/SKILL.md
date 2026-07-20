@@ -1,5 +1,5 @@
 ---
-name: clickcease-blocking-thresholds
+name: blocking-thresholds
 description: Guides the configuration of click fraud blocking thresholds in ClickCease.
 ---
 

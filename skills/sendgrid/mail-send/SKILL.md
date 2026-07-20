@@ -1,5 +1,5 @@
 ---
-name: sendgrid-mail-send
+name: mail-send
 description: Use this skill when the user wants to use the SendGrid Mail Send API v3 to send emails.
 ---
 

@@ -1,0 +1,20 @@
+[
+  {"query": "our mechanical port left about 16,000 compiler errors. how do I systematically burn them down instead of drowning?", "should_trigger": true},
+  {"query": "just split our monolith into ~100 crates and now there are cyclic dependency errors everywhere. how do I approach fixing them?", "should_trigger": true},
+  {"query": "how do I parallelize fixing thousands of build errors across many workers, crate by crate?", "should_trigger": true},
+  {"query": "the refactor broke the build with a massive wall of type errors — what's a good queue-based strategy to clear them?", "should_trigger": true},
+  {"query": "should I dump all the cargo check errors to a file and group them by module to divide the work?", "should_trigger": true},
+  {"query": "my agents are 'fixing' compiler errors by stubbing the functions out. how do I stop that while still clearing the errors?", "should_trigger": true},
+  {"query": "what order should I fix crates in when everything is broken after a big port — leaf first?", "should_trigger": true},
+  {"query": "16k errors after breaking our single compilation unit into crates, how do I handle the cyclic dependency ones specifically?", "should_trigger": true},
+  {"query": "how do I split my Rust project into multiple crates to avoid cyclic dependencies in the first place?", "should_trigger": false},
+  {"query": "translate every .zig file to .rs in parallel without the workers colliding", "should_trigger": false},
+  {"query": "review this crate's changes for correctness bugs", "should_trigger": false},
+  {"query": "I have one TypeScript compile error, can you tell me what's wrong with this function?", "should_trigger": false},
+  {"query": "why is my Rust build so slow, how do I speed up compile times?", "should_trigger": false},
+  {"query": "explain what a linker error is", "should_trigger": false},
+  {"query": "set up incremental compilation and sccache for my workspace", "should_trigger": false},
+  {"query": "how do I get the ported test suite green in CI?", "should_trigger": false},
+  {"query": "help me plan the overall Rust rewrite strategy", "should_trigger": false},
+  {"query": "my python script has a syntax error on line 12, fix it", "should_trigger": false}
+]

@@ -1,0 +1,20 @@
+[
+  {"query": "what are the classic 'looks identical in both languages but behaves differently' traps I should watch for when porting code?", "should_trigger": true},
+  {"query": "we ported a function that's syntactically the same but it regressed in production. why do these subtle behavioral differences happen?", "should_trigger": true},
+  {"query": "our ported code works in debug but breaks in release builds — what class of porting bug is this?", "should_trigger": true},
+  {"query": "translating between languages, what should I tell my reviewers to specifically look for so we don't ship semantic regressions?", "should_trigger": true},
+  {"query": "the port works for most inputs but panics on one edge case with negative numbers. is this a known porting pitfall?", "should_trigger": true},
+  {"query": "what breaks when an assert is a function in the old language but a macro in the new one?", "should_trigger": true},
+  {"query": "give me a catalog of semantic divergence categories to check during a mechanical translation", "should_trigger": true},
+  {"query": "why would eager vs lazy evaluation cause a regression after porting?", "should_trigger": true},
+  {"query": "give me the specific Rust regressions from the Bun rewrite — debug_assert, bytemuck, comptime format strings", "should_trigger": false},
+  {"query": "review this specific diff and find the bug", "should_trigger": false},
+  {"query": "what's the Rust equivalent of Zig's error union?", "should_trigger": false},
+  {"query": "how do I add lifetimes to escaping struct fields?", "should_trigger": false},
+  {"query": "my code has a null pointer exception, help me debug it", "should_trigger": false},
+  {"query": "explain undefined behavior in C", "should_trigger": false},
+  {"query": "what's the difference between floor and trunc in general math?", "should_trigger": false},
+  {"query": "how do I set up parallel workers for the translation phase?", "should_trigger": false},
+  {"query": "help me plan whether to port our codebase at all", "should_trigger": false},
+  {"query": "how do I get the test suite green in CI after the migration?", "should_trigger": false}
+]

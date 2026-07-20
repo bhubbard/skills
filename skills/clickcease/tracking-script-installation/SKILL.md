@@ -1,5 +1,5 @@
 ---
-name: clickcease-tracking-script-installation
+name: tracking-script-installation
 description: Guides the installation of the ClickCease tracking script on HTML websites and WordPress.
 ---
 

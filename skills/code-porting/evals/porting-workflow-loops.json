@@ -1,0 +1,20 @@
+[
+  {"query": "I've got PORTING.md and lifetimes done, now I need to actually translate ~1,400 source files to the new language in parallel. how do I structure the workers?", "should_trigger": true},
+  {"query": "running a bunch of Claude agents to migrate a codebase and they keep stepping on each other's git state — stashing and resetting over each other. how do I stop that?", "should_trigger": true},
+  {"query": "how do I parallelize a huge mechanical port across many worktrees without running out of disk or corrupting the repo?", "should_trigger": true},
+  {"query": "what's a good write/review/apply loop for porting code at scale with separate implementer and reviewer roles?", "should_trigger": true},
+  {"query": "my parallel migration workers keep stubbing out functions instead of implementing them. how should I fix the workflow rather than hand-fixing each file?", "should_trigger": true},
+  {"query": "how many agents/worktrees should I run for a million-line rewrite and how do I keep them from colliding?", "should_trigger": true},
+  {"query": "the port is going too slowly because every worker runs cargo check in the loop and freezes disk IO. how should I structure the loops instead?", "should_trigger": true},
+  {"query": "I want to run 50 dynamic workflows to mechanically translate our repo — how do I set the git discipline rules?", "should_trigger": true},
+  {"query": "should I decide big-bang vs incremental before I start the port?", "should_trigger": false},
+  {"query": "review this single PR diff and tell me if the ported logic diverges from the original", "should_trigger": false},
+  {"query": "we have 16,000 compiler errors grouped by crate, how do I divide and conquer them?", "should_trigger": false},
+  {"query": "how do I get the reused TypeScript test suite passing in CI on all 6 platforms after the port?", "should_trigger": false},
+  {"query": "set up a CI/CD pipeline with GitHub Actions for our Node app", "should_trigger": false},
+  {"query": "help me resolve this git merge conflict in my feature branch", "should_trigger": false},
+  {"query": "what's the best way to parallelize a data-processing job with a worker pool in Python?", "should_trigger": false},
+  {"query": "how do I add lifetimes to escaping pointers when porting to Rust?", "should_trigger": false},
+  {"query": "explain how map-reduce works", "should_trigger": false},
+  {"query": "which model should I use to write the porting guide in the first place?", "should_trigger": false}
+]

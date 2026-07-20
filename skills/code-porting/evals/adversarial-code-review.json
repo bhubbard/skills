@@ -1,0 +1,20 @@
+[
+  {"query": "review this Rust diff like an adversary — assume it's wrong and find every way it breaks. it already compiles clean.", "should_trigger": true},
+  {"query": "we merged a ton of AI-generated code and I don't trust it. how do I set up a review process where the reviewer only sees the diff and tries to find bugs?", "should_trigger": true},
+  {"query": "poke holes in this change, I think there's a use-after-free somewhere in the async close path", "should_trigger": true},
+  {"query": "red-team this ported function for behavioral divergence from the original C code", "should_trigger": true},
+  {"query": "I want two independent reviewers per implementer whose only job is to find correctness bugs — how do I structure that?", "should_trigger": true},
+  {"query": "this code looks correct and passes review but I'm worried about subtle bugs. can you do a really skeptical second pass?", "should_trigger": true},
+  {"query": "find bugs in this diff — check eager vs lazy evaluation, sign edge cases, and release-vs-debug differences specifically", "should_trigger": true},
+  {"query": "how should code review work when the author is an LLM biased toward shipping?", "should_trigger": true},
+  {"query": "give me a checklist to confirm the green test suite is real and nothing was stubbed before I merge", "should_trigger": false},
+  {"query": "what are the classic 'looks identical but behaves differently' traps when porting between languages?", "should_trigger": false},
+  {"query": "how do I get my parallel porting workers to stop colliding on git?", "should_trigger": false},
+  {"query": "can you write a new logging module for our service?", "should_trigger": false},
+  {"query": "review my pull request for style and naming conventions and suggest cleaner variable names", "should_trigger": false},
+  {"query": "do a security audit of our auth flow for injection vulnerabilities", "should_trigger": false},
+  {"query": "explain what a use-after-free bug is", "should_trigger": false},
+  {"query": "set up a GitHub PR template and CODEOWNERS file for the team", "should_trigger": false},
+  {"query": "help me plan whether to rewrite our service in Rust at all", "should_trigger": false},
+  {"query": "what's the Rust equivalent of a Zig tagged union?", "should_trigger": false}
+]

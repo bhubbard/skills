@@ -1,0 +1,20 @@
+[
+  {"query": "we're seriously considering rewriting our whole Go payments service in Rust. before anyone writes code, how should we actually approach planning this so it doesn't become a 6-month death march?", "should_trigger": true},
+  {"query": "should I do an incremental rewrite of this C++ engine or just port the whole thing at once?", "should_trigger": true},
+  {"query": "i want to migrate our Zig codebase to Rust. what artifacts/docs should I set up first before translating files?", "should_trigger": true},
+  {"query": "thinking about reimplementing our 200k-line parser in another language. how do I de-risk a project this size before committing?", "should_trigger": true},
+  {"query": "how do I write a PORTING.md that maps our old language's patterns to the new one?", "should_trigger": true},
+  {"query": "my team keeps arguing about whether to rewrite the analytics pipeline from python to go all at once or piece by piece — help me think it through", "should_trigger": true},
+  {"query": "we picked Rust as the target for the port. what's the smart first step, like a trial run on a few files?", "should_trigger": true},
+  {"query": "planning a big language migration for our runtime, need a strategy for keeping it the same product while swapping languages", "should_trigger": true},
+  {"query": "is a full rewrite even a good idea here, and if so how do we scope the plan?", "should_trigger": true},
+  {"query": "I've already got PORTING.md written and the plan approved — now I need to actually translate 1,400 files in parallel without workers clobbering each other", "should_trigger": false},
+  {"query": "the port already generated 16,000 compiler errors, how do I burn them down efficiently?", "should_trigger": false},
+  {"query": "review this ported Rust diff and find behavioral bugs vs the original", "should_trigger": false},
+  {"query": "how do I add Rust lifetimes to our manually-managed struct fields during the port?", "should_trigger": false},
+  {"query": "plan out the sprint for our team this quarter and assign story points", "should_trigger": false},
+  {"query": "help me design the database schema for a new microservice we're building from scratch", "should_trigger": false},
+  {"query": "what's the Rust equivalent of Zig's defer and comptime?", "should_trigger": false},
+  {"query": "our CI test suite is flaky after the migration, how do I get all platforms green?", "should_trigger": false},
+  {"query": "write a project plan for migrating our office to a new building next year", "should_trigger": false}
+]

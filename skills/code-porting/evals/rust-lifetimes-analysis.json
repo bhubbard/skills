@@ -1,0 +1,20 @@
+[
+  {"query": "porting C to Rust and the borrow checker is fighting me on every pointer. how do I figure out the right lifetime for each struct field?", "should_trigger": true},
+  {"query": "how do I add Rust lifetimes to code that used to manage memory manually with raw pointers and arenas?", "should_trigger": true},
+  {"query": "we used refcounting and 'pay close attention' in the old code. how do I model that ownership explicitly in Rust before translating?", "should_trigger": true},
+  {"query": "I want to trace every struct field's control flow and record its ownership in a file before the port — how should I do that?", "should_trigger": true},
+  {"query": "what's the right way to express a pointer that escapes into a callback or FFI when porting to Rust so I don't get a use-after-free?", "should_trigger": true},
+  {"query": "how do I build a LIFETIMES.tsv for our codebase so all the translation workers make consistent ownership decisions?", "should_trigger": true},
+  {"query": "our GC'd runtime is moving to Rust and I need to decide owner vs borrower for every long-lived value up front", "should_trigger": true},
+  {"query": "how do I decide between Box, Rc, Arc, and borrowed references for each field during a Rust port?", "should_trigger": true},
+  {"query": "what's the Rust equivalent of Zig's defer for cleanup?", "should_trigger": false},
+  {"query": "explain Rust lifetimes and the borrow checker to me as a beginner", "should_trigger": false},
+  {"query": "how do I split the codebase into crates to avoid cyclic dependencies?", "should_trigger": false},
+  {"query": "give me the full end-to-end Rust rewrite playbook", "should_trigger": false},
+  {"query": "review this diff for a use-after-free in the async close path", "should_trigger": false},
+  {"query": "I'm getting a 'does not live long enough' error in my normal Rust app, help me fix this one function", "should_trigger": false},
+  {"query": "how do I burn down compiler errors crate by crate?", "should_trigger": false},
+  {"query": "what are the semantic pitfalls when porting between languages?", "should_trigger": false},
+  {"query": "help me design a garbage collector", "should_trigger": false},
+  {"query": "how should I plan big-bang vs incremental for the rewrite?", "should_trigger": false}
+]

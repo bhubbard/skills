@@ -1,5 +1,5 @@
 ---
-name: unlighthouse-ci
+name: ci-cd-integration
 description: Integrate Unlighthouse into CI/CD pipelines (like GitHub Actions) for automated performance audits. Use this when the user wants to automate Lighthouse checks on pull requests or deployments.
 ---
 

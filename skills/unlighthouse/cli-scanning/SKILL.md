@@ -1,5 +1,5 @@
 ---
-name: unlighthouse-cli
+name: cli-scanning
 description: Use Unlighthouse CLI to run full-site Lighthouse scans. Use this skill when the user wants to audit an entire website for performance, accessibility, best practices, and SEO using Unlighthouse.
 ---
 

@@ -1,5 +1,5 @@
 ---
-name: gravatar-avatar-requests
+name: avatar-requests
 description: How to request user avatars from Gravatar using the user's email hash.
 ---
 

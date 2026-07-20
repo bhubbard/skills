@@ -1,5 +1,5 @@
 ---
-name: gravatar-profile-api
+name: profile-api
 description: Interacting with the Gravatar Profile REST API to fetch rich user profile data using an email hash.
 ---
 

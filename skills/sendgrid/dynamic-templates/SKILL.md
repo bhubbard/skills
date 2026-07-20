@@ -1,5 +1,5 @@
 ---
-name: sendgrid-dynamic-templates
+name: dynamic-templates
 description: Use this skill when the user wants to use SendGrid Dynamic Templates for sending emails.
 ---
 

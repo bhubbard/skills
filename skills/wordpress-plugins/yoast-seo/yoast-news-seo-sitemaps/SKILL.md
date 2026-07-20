@@ -1,6 +1,6 @@
 ---
 name: yoast-news-seo-sitemaps
-description: "Filtering the Google News sitemap."
+description: "Customize the Yoast News SEO Google News XML sitemap in WordPress — exclude categories, add custom post types, and follow Google's 48-hour rule. Use when working with Yoast News SEO, the wpseo_news_sitemap filters, a Google News sitemap, or configuring which posts get submitted to Google News."
 ---
 
 # Yoast News SEO Sitemaps

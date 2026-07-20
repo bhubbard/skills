@@ -1,0 +1,20 @@
+[
+  {"query": "we want to rewrite our C networking engine in Rust to kill our use-after-free bugs. give me the end-to-end game plan.", "should_trigger": true},
+  {"query": "should we move our Zig runtime to Rust? and if so, what's the full sequence from planning to shipping?", "should_trigger": true},
+  {"query": "is a Rust rewrite worth it for a memory-unsafe C++ codebase, and how would we actually pull it off?", "should_trigger": true},
+  {"query": "porting our Go service to Rust — walk me through all the stages and which tools/passes I'll need", "should_trigger": true},
+  {"query": "my bug list is all double-frees and leaks in error paths. would Rust fix that, and how do I orchestrate the migration?", "should_trigger": true},
+  {"query": "give me the overall playbook for a big codebase-to-Rust port, tying together planning, lifetimes, crates, and testing", "should_trigger": true},
+  {"query": "we're greenlit to reimplement the parser in Rust, need the master plan for the whole effort", "should_trigger": true},
+  {"query": "what does Rust actually buy us over C++ for a rewrite, and what's the sequence of work?", "should_trigger": true},
+  {"query": "how do I write the PORTING.md pattern-mapping doc and decide big-bang vs incremental?", "should_trigger": false},
+  {"query": "just the Zig-to-Rust construct mappings please — defer, comptime, tagged unions", "should_trigger": false},
+  {"query": "how do I add lifetimes to my manually-managed struct fields during the Rust port?", "should_trigger": false},
+  {"query": "I have 16,000 compiler errors after the Rust port, how do I clear them?", "should_trigger": false},
+  {"query": "how do I split the Rust codebase into ~100 crates without cyclic deps?", "should_trigger": false},
+  {"query": "write me a hello-world Actix web server in Rust", "should_trigger": false},
+  {"query": "teach me Rust ownership and borrowing from scratch", "should_trigger": false},
+  {"query": "review this ported Rust diff for bugs", "should_trigger": false},
+  {"query": "convert this single Python function to Rust", "should_trigger": false},
+  {"query": "what are the known semantic regressions specific to a Rust port like debug_assert erasing side effects?", "should_trigger": false}
+]

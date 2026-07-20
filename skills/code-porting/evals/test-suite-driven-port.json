@@ -1,0 +1,20 @@
+[
+  {"query": "how do I actually verify our rewrite didn't break anything? we have a big existing test suite — can I reuse it?", "should_trigger": true},
+  {"query": "porting our runtime to a new language and the test suite is written in TypeScript. how do I use it as the correctness oracle?", "should_trigger": true},
+  {"query": "what's the right progression to get a ported codebase green — smoke tests, then local, then CI?", "should_trigger": true},
+  {"query": "our migration tests keep crashing the CI box because some spawn 10k processes and exhaust sockets. how do I isolate them?", "should_trigger": true},
+  {"query": "how do I trust a million-line machine-generated diff without reading every line?", "should_trigger": true},
+  {"query": "some tests time out in debug builds after the port but pass in release. how should I handle the test suite across build modes?", "should_trigger": true},
+  {"query": "after porting, one platform is green and another still red. how do I drive the whole suite to green everywhere before merging?", "should_trigger": true},
+  {"query": "a test that expected a stack-overflow RangeError now passes the parse instead after the rewrite — how do I think about test failures that are actually behavior changes?", "should_trigger": true},
+  {"query": "give me the final pre-merge checklist to make sure no tests were skipped or stubbed", "should_trigger": false},
+  {"query": "review this diff for bugs, assume it's wrong", "should_trigger": false},
+  {"query": "how do I structure parallel workers to translate the files?", "should_trigger": false},
+  {"query": "write unit tests for this brand-new function I just wrote", "should_trigger": false},
+  {"query": "my Jest tests are flaky, how do I debug intermittent failures in a normal app?", "should_trigger": false},
+  {"query": "set up a test coverage report and enforce 80% coverage in CI for our project", "should_trigger": false},
+  {"query": "how do I burn down 16,000 compiler errors after the port?", "should_trigger": false},
+  {"query": "explain the difference between unit and integration tests", "should_trigger": false},
+  {"query": "help me choose between big-bang and incremental for the rewrite", "should_trigger": false},
+  {"query": "how do I add lifetimes to my ported structs?", "should_trigger": false}
+]

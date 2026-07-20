@@ -1,0 +1,20 @@
+[
+  {"query": "the rewrite is green on all platforms and I'm about to merge — how do I confirm the green is real and we didn't cheat?", "should_trigger": true},
+  {"query": "how do I make sure my migration workers didn't just skip failing tests or stub functions to get to green?", "should_trigger": true},
+  {"query": "give me a final gate checklist before I merge this million-line port to main", "should_trigger": true},
+  {"query": "is this port actually done, or did the agents lower the bar to make it pass?", "should_trigger": true},
+  {"query": "how do I audit machine-generated code for hidden todo!() stubs and ignored tests before shipping?", "should_trigger": true},
+  {"query": "before I press merge on the rewrite, what should I verify about the tests actually running and nothing being deleted?", "should_trigger": true},
+  {"query": "how do I confirm the adversarial reviewers were really catching discrepancies and not rubber-stamping?", "should_trigger": true},
+  {"query": "what are the specific 'looks identical but behaves differently' bug categories to watch for while translating?", "should_trigger": false},
+  {"query": "how do I get the test suite green in the first place across smoke, local, and CI?", "should_trigger": false},
+  {"query": "review this diff adversarially and find bugs", "should_trigger": false},
+  {"query": "how do I burn down the compiler errors after the port?", "should_trigger": false},
+  {"query": "write a QA test plan for our new mobile app release", "should_trigger": false},
+  {"query": "how do I set up branch protection rules and required reviewers on GitHub?", "should_trigger": false},
+  {"query": "explain what code coverage measures", "should_trigger": false},
+  {"query": "help me decide big-bang vs incremental for the port", "should_trigger": false},
+  {"query": "my deployment checklist for production releases needs updating, help me draft it", "should_trigger": false},
+  {"query": "what's the Rust equivalent of Zig defer?", "should_trigger": false},
+  {"query": "how do I split the codebase into crates?", "should_trigger": false}
+]

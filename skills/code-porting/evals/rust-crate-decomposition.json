@@ -1,0 +1,20 @@
+[
+  {"query": "our ported Rust code is one giant crate and compiles forever. how do I split it into many crates?", "should_trigger": true},
+  {"query": "how many crates should our Rust project be, and how do I draw the boundaries without creating cyclic dependencies?", "should_trigger": true},
+  {"query": "I split our monolith into crates and now crate A and crate B depend on each other — how do I break the cycle?", "should_trigger": true},
+  {"query": "porting a single-compilation-unit codebase to Rust and want to parallelize the build via ~100 crates. what's the strategy?", "should_trigger": true},
+  {"query": "cargo says cyclic package dependency between my crates. how should I restructure to fix it without re-architecting everything?", "should_trigger": true},
+  {"query": "how do I organize a ported codebase into crates while keeping it close to the original module structure?", "should_trigger": true},
+  {"query": "what's the best way to extract shared types into a core crate to break dependency cycles?", "should_trigger": true},
+  {"query": "how do I burn down the 16,000 compiler errors that showed up after the port?", "should_trigger": false},
+  {"query": "how do I speed up a single normal Rust crate's compile time with sccache and incremental builds?", "should_trigger": false},
+  {"query": "give me the full end-to-end Rust rewrite plan", "should_trigger": false},
+  {"query": "how do I map Zig defer to Rust?", "should_trigger": false},
+  {"query": "what's a Cargo workspace and how do I set one up for a brand-new project?", "should_trigger": false},
+  {"query": "how do I decide lifetimes for struct fields in the port?", "should_trigger": false},
+  {"query": "explain what a dependency graph is", "should_trigger": false},
+  {"query": "review this crate's diff for bugs", "should_trigger": false},
+  {"query": "help me publish my crate to crates.io", "should_trigger": false},
+  {"query": "how do I structure parallel workers to translate files during the port?", "should_trigger": false},
+  {"query": "resolve this circular import in my Python package", "should_trigger": false}
+]

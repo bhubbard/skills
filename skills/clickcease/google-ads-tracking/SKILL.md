@@ -1,5 +1,5 @@
 ---
-name: clickcease-google-ads-tracking
+name: google-ads-tracking
 description: Guides the setup and integration of the ClickCease tracking template in Google Ads.
 ---
 

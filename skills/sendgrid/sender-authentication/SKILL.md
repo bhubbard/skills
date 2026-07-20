@@ -1,5 +1,5 @@
 ---
-name: sendgrid-sender-authentication
+name: sender-authentication
 description: Use this skill when the user is setting up or configuring SendGrid Sender Authentication (Domain Authentication, Link Branding).
 ---
 

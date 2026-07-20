@@ -1,5 +1,5 @@
 ---
-name: unlighthouse-config
+name: configuration
 description: Configure Unlighthouse using unlighthouse.config.ts. Use this skill when the user needs to customize scan rules, budgets, URLs to ignore, or other advanced settings.
 ---
 
