@@ -1,0 +1,4 @@
+{
+  "name": "cloudflare",
+  "description": "Cloudflare Workers, Durable Objects, D1, KV, Queues, Workflows, Turnstile, and Kumo UI."
+}

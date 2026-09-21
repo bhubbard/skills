@@ -1,0 +1,8 @@
+{
+  "name": "seo",
+  "description": "Technical SEO, Core Web Vitals, Google Search Console, Schema markup, and Unlighthouse.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brandon Hubbard"
+  }
+}

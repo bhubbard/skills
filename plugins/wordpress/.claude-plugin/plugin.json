@@ -1,0 +1,8 @@
+{
+  "name": "wordpress",
+  "description": "WordPress core, block themes, WP-CLI, Gutenberg, Gravity Forms, and Yoast SEO.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Brandon Hubbard"
+  }
+}
