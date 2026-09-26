@@ -1,0 +1,6 @@
+{
+  "_readme": "Replace <SKILLS_ROOT> with the absolute path to your brandon-skills clone, e.g. /home/you/brandon-skills",
+  "entries": [
+    { "path": "<SKILLS_ROOT>/skills/marketingskills" }
+  ]
+}

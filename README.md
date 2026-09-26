@@ -4,7 +4,7 @@ A comprehensive repository of AI Agent Skills covering platforms, tools, plugins
 
 > **Open source & shareable.** Fork this repo and adapt the skills to your own projects. No machine-specific paths are included in the repository itself — configure your local paths using the setup instructions below.
 
-**33 skill groups | 190+ individual skills | 7 plugin themes | 6 project profiles**
+**35 skill groups | 600+ individual skills | 7 plugin themes | 7 project profiles**
 
 ---
 
@@ -70,6 +70,7 @@ sed "s|<SKILLS_ROOT>|$SKILLS_ROOT|g" profiles/wordpress-full.json > .agents/skil
 | `profiles/seo-audit.json` | SEO + Search Console + Unlighthouse + GA |
 | `profiles/client-crm.json` | Filevine + LeadDocket + RingCentral + CallRail |
 | `profiles/dev-tools.json` | GitHub + 1Password + Chrome DevTools + Extensions |
+| `profiles/marketingskills.json` | 50 marketing skills (CRO, copywriting, SEO, analytics, ads, emails) |
 | `profiles/all-skills.json` | Everything (use sparingly — large context) |
 
 ---
@@ -111,6 +112,8 @@ sed "s|<SKILLS_ROOT>|$SKILLS_ROOT|g" profiles/wordpress-full.json > .agents/skil
 | `wordpress-plugins` | 52+ individual WordPress plugin skills |
 | `zapier` | Zapier automation and Zap building |
 | `zimaboard-casaos` | ZimaBoard hardware + CasaOS setup |
+| `emilkowalski` | Motion design, web & Expo animations, UI polish (from Emil Kowalski) |
+| `marketingskills` | 50 AI agent marketing skills: CRO, copywriting, SEO, analytics, emails, ads (from Corey Haines) |
 
 ---
 

@@ -33,6 +33,8 @@
     { "path": "<SKILLS_ROOT>/skills/clickcease" },
     { "path": "<SKILLS_ROOT>/skills/isitagentready" },
     { "path": "<SKILLS_ROOT>/skills/zimaboard-casaos" },
-    { "path": "<SKILLS_ROOT>/skills/privacy-laws" }
+    { "path": "<SKILLS_ROOT>/skills/privacy-laws" },
+    { "path": "<SKILLS_ROOT>/skills/emilkowalski" },
+    { "path": "<SKILLS_ROOT>/skills/marketingskills" }
   ]
 }
