@@ -94,6 +94,12 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 | [`cloudflare-d1-migration-maker`](catalog/cloudflare-d1-migration-maker.md) | Cloudflare Edge | Generates forward SQLite DDL migrations from TypeScript entity diffs | 338 tokens |
 | [`conventional-committer`](catalog/conventional-committer.md) | Git Engineering | Synthesizes Conventional Commit messages from `git diff --stat` | 273 tokens |
 | [`unit-test-synthesizer`](catalog/unit-test-synthesizer.md) | Testing / QA | Synthesizes happy-path, boundary, and error tests for a single function | 328 tokens |
+| [`c2rust-function-porter`](catalog/c2rust-function-porter.md) | Code Porting | Transpiles isolated C++/C#/Python functions into idiomatic safe Rust | 351 tokens |
+| [`c2rust-test-porter`](catalog/c2rust-test-porter.md) | Code Porting | Converts GoogleTest/Catch2/pytest test suites to standard `#[test]` Rust | 326 tokens |
+| [`c2rust-type-scaffolder`](catalog/c2rust-type-scaffolder.md) | Code Porting | Maps C++ structs, enums, and smart pointers to idiomatic Rust types | 345 tokens |
+| [`c2rust-crate-mapper`](catalog/c2rust-crate-mapper.md) | Code Porting | Maps C++ `#include` headers to modern Rust crates with `Cargo.toml` lines | 321 tokens |
+| [`cpp-oop-to-data-oriented`](catalog/cpp-oop-to-data-oriented.md) | Code Porting | Converts C++ OOP virtual class hierarchies into Rust Data-Oriented enums | 432 tokens |
+| [`rustc-error-burn-down`](catalog/rustc-error-burn-down.md) | Code Porting | Generates surgical 1-line patches for specific `rustc` diagnostic errors | 343 tokens |
 | [`ast-refactor-transformer`](catalog/ast-refactor-transformer.md) | Refactoring | Replaces deprecated API patterns with modern idioms | 171 tokens |
 | [`schema-validator`](catalog/schema-validator.md) | Data Quality | Heals corrupted or truncated JSON/YAML payloads | 157 tokens |
 

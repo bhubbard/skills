@@ -4,3 +4,4 @@ node_modules/
 dist/
 .turbo/
 .wrangler/
+__pycache__/
