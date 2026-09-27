@@ -44,3 +44,15 @@ pub fn setup_pipeline(render_target: &mut RenderTarget, texture_name: &str) {
 }
 ```
 *(or calling `render_target.bind_texture(&texture_name);` if signature cannot change)*
+
+---
+
+## Verification Harness
+- **Validator Engine**: Compiler Diagnostic Counter
+- **Verification Rule**:
+  1. Measure baseline compiler error count: `N_pre = count(cargo check errors)`.
+  2. Apply candidate patch.
+  3. Measure updated compiler error count: `N_post = count(cargo check errors)`.
+  4. Assert: `N_post < N_pre`.
+- **Pass Criteria**: Error burn-down invariant satisfied (`N_post < N_pre`).
+- **Escalation Action**: If `N_post >= N_pre`, immediately revert patch and escalate to Tier 2.

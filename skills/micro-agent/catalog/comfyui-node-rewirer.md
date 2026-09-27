@@ -38,3 +38,14 @@ id: 6, class_type: "LTXVMLXVAEDecode", inputs: {"samples": "LATENT", "vae": "VAE
   }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: ComfyUI Directed Graph Validator
+- **Verification Rule**:
+  1. Parse modified graph JSON via `serde_json`.
+  2. Validate node existence: source and destination node IDs must exist in the graph.
+  3. Validate socket type parity: output socket type must strictly match destination input socket type (e.g. `MODEL` to `MODEL`, `IMAGE` to `IMAGE`).
+- **Pass Criteria**: Valid DAG topology with matching socket data types.
+- **Escalation Action**: Reject invalid connection and escalate to Tier 2.

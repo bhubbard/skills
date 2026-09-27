@@ -44,3 +44,14 @@ perf(pipeline): add TeaCache activation skipping for 1.5x speedup
 - Track transformer activation velocity across timesteps
 - Skip redundant DiT blocks when velocity falls below threshold
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: Conventional Commits Regex Validator
+- **Verification Rule**:
+  1. Header must match regex: `^(feat|fix|docs|style|refactor|perf|test|build|ci|chore|revert)(\([a-z0-9_-]+\))?: [^\n]{1,72}$`
+  2. Header length must be $\le 72$ characters.
+  3. Optional body must be separated by an empty newline.
+- **Pass Criteria**: Regex returns match with 0 errors.
+- **Escalation Action**: Auto-format or trim header; if type prefix is missing, retry with schema.

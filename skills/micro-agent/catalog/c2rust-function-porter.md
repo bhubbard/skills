@@ -49,3 +49,14 @@ impl RadarBlip {
     }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_file` + `cargo check` (isolated sub-crate)
+- **Verification Rule**:
+  1. Fast-path AST check: Output must parse cleanly via `syn::parse_file` (< 1ms).
+  2. Check for prohibited residual C++ syntax: no `void*`, `->`, `NULL`, `std::vector`, or raw pointers without `unsafe`.
+  3. Secondary check: Sub-crate `cargo check` verifies compilation.
+- **Pass Criteria**: Valid safe Rust AST with zero syntax errors.
+- **Escalation Action**: If borrow or lifetime errors occur, pass to `rust-compiler-healer`; if fundamentally broken, escalate to Tier 2.

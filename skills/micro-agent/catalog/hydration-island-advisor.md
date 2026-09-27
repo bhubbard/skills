@@ -37,3 +37,14 @@ import VideoPlayer from '../components/VideoPlayer.jsx';
 
 Rationale: Below-the-fold media players should defer JavaScript loading until scrolled into viewport to minimize initial Total Blocking Time (TBT).
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: Set Membership Validator
+- **Verification Rule**:
+  1. Output directive must strictly belong to the allowed Astro hydration directive set:
+     `["client:load", "client:idle", "client:visible", "client:media", "client:only"]`
+  2. If parameterized (e.g. `client:media("(max-width: 768px)")`), verify media query syntax is non-empty.
+- **Pass Criteria**: Output is a valid, recognized Astro directive.
+- **Escalation Action**: Default fallback to `client:visible`.

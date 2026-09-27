@@ -43,3 +43,15 @@ if (timeSeconds >= 2.5 && timeSeconds <= 4.8) {
   heroLogo.style.opacity = 0;
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: JavaScript Sandbox (`quickjs` / `deno`)
+- **Verification Rule**:
+  1. Evaluate progress function $f(t)$ across normalized domain $t \in [0.0, 0.25, 0.5, 0.75, 1.0]$.
+  2. Assert boundary conditions: $|f(0.0)| < 1e-4$ and $|f(1.0) - 1.0| < 1e-4$.
+  3. Assert value bounds: for all evaluated $t$, $-0.2 \le f(t) \le 1.2$ (spring overshoot allowance).
+  4. Assert no `NaN` or `Infinity`.
+- **Pass Criteria**: Smooth mathematical evaluation within bounded physical constraints.
+- **Escalation Action**: Fallback to standard ease-out curve (`cubic-bezier(0.16, 1, 0.3, 1)`).

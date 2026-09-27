@@ -74,3 +74,13 @@ impl Entity {
     }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_file` Layout Inspector
+- **Verification Rule**:
+  1. Parse output into valid Rust AST.
+  2. Inspect struct fields: assert that data is stored in contiguous collections (`Vec<T>`, `Box<[T]>`) rather than pointer graphs or inheritance shims.
+- **Pass Criteria**: Syntactically valid Rust adhering to Struct-of-Arrays (SoA) layout.
+- **Escalation Action**: Escalate to Tier 2 on architectural failure.

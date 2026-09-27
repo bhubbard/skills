@@ -30,3 +30,14 @@ Print the IP address (column 3) and latency (column 7) for all requests with sta
 ```bash
 awk '$6 >= 500 { print $3, $7 }'
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: GNU awk Lint Validator
+- **Verification Rule**:
+  1. Validate awk syntax:
+     `awk --lint -f - /dev/null <<< "$OUTPUT"`
+  2. Verify command exit code is 0.
+- **Pass Criteria**: Output is valid, lint-clean `awk` code.
+- **Escalation Action**: Escalate to Tier 2 on syntax error.

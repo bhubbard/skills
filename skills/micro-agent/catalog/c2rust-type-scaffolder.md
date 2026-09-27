@@ -60,3 +60,14 @@ pub struct TextureDescriptor {
     pub initial_data: Vec<u8>,
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_str::<Item>`
+- **Verification Rule**:
+  1. Parse output as a valid Rust `struct` or `enum`.
+  2. Ensure standard derives are attached (`#[derive(Debug, Clone, PartialEq)]`).
+  3. Verify no raw unmanaged pointer types (`void*`, `char*`) without explicit safe wrapper or raw pointer annotation.
+- **Pass Criteria**: Output compiles into valid Rust type definitions.
+- **Escalation Action**: Escalate to Tier 2 on type conversion ambiguity.

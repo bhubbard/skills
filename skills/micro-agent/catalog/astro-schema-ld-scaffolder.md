@@ -44,3 +44,14 @@ url: "https://code.brandonhubbard.com/zev-rs/"
 }
 </script>
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `serde_json` + Schema.org Structure Validator
+- **Verification Rule**:
+  1. Extract `<script type="application/ld+json">` contents and parse via `serde_json::from_str`.
+  2. Verify top-level `@context` strictly equals `"https://schema.org"` (or `"http://schema.org"`).
+  3. Verify `@type` is a recognized Schema.org entity (e.g. `Article`, `BlogPosting`, `Person`, `Organization`, `WebSite`).
+- **Pass Criteria**: Syntactically valid JSON-LD graph with valid `@context` and non-empty `@type`.
+- **Escalation Action**: On malformed JSON or invalid schema entity, escalate to Tier 2.

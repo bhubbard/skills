@@ -39,3 +39,14 @@ SOURCE CONTEXT:
 +    log_name(&name);
 +    send_to_channel(name);
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `cargo check --message-format=json`
+- **Verification Rule**:
+  1. Apply unified diff to temporary source buffer.
+  2. Re-run `cargo check --message-format=json`.
+  3. Check that the original diagnostic code (e.g. `E0382`, `E0308`) no longer appears in compiler output.
+- **Pass Criteria**: Target diagnostic error is completely resolved without introducing new compilation errors.
+- **Escalation Action**: If target diagnostic persists or new errors appear, discard diff and escalate to Tier 2.

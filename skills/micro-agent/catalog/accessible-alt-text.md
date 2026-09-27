@@ -36,3 +36,14 @@ SURROUNDING HTML:
 ```text
 Doctor in white coat reviewing spine MRI scans with seated patient during consultation
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: Invariant String Linter
+- **Verification Rule**: 
+  1. String length must be between 10 and 150 characters: `10 <= len(output.strip()) <= 150`.
+  2. Output must NOT start with boilerplate prefixes (`image of`, `picture of`, `photo of`, `graphic of`).
+  3. Output must contain at least 3 distinct descriptive words.
+- **Pass Criteria**: Meets all 3 length and quality criteria.
+- **Escalation Action**: If criteria fail, re-prompt with explicit character length limits or escalate to Tier 2.

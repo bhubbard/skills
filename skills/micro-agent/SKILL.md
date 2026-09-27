@@ -124,8 +124,8 @@ While working in any repository (`~/PROJECTS`), proactively scan for operations 
 
 On Apple Silicon machines:
 1. **Stage 0 (`zev-rs`)**: Ultra-fast calibrated probabilistic routing in **5.8 microseconds** with zero tokens.
-2. **Stage 1 (`apfel-rs` Micro-Agent)**: On-device execution via Apple FoundationModels / CoreML in **< 100 milliseconds** within the 4k-token budget.
-3. **Stage 2 (Frontier Subagent)**: Only escalate to Claude 3.5 Sonnet or Gemini 1.5 Pro when multi-file repo synthesis exceeds 4,000 tokens.
+2. **Stage 1 (`apfel-rs` Micro-Agent + Verification Harness)**: On-device execution via Apple FoundationModels / CoreML in **< 100 milliseconds** within the 4k-token budget. Deterministic harness checks output (AST, compiler, regex, schema); if valid, commit immediately.
+3. **Stage 2 (Frontier Subagent)**: Escalate to Claude / Gemini only when Stage 1 verification fails or when multi-file repo synthesis exceeds 4,000 tokens.
 
 Read [`references/apfel_integration.md`](references/apfel_integration.md) for concrete Rust/Swift bridging code.
 
@@ -143,4 +143,6 @@ Read [`references/apfel_integration.md`](references/apfel_integration.md) for co
      --input sample_input.txt \
      --output sample_output.txt
    ```
-5. **Publish to Catalog**: Commit the new micro-agent to `skills/micro-agent/catalog/`.
+5. **Define Deterministic Verification Harness**: Specify the automated validator engine (`syn`, `cargo check`, `serde_json`, regex, in-memory SQLite) and clear pass/escalation criteria.
+6. **Publish to Catalog**: Commit the new micro-agent to `skills/micro-agent/catalog/`.
+

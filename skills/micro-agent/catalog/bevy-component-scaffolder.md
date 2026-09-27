@@ -47,3 +47,14 @@ impl WantedLevel {
     }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_file` / `syn::parse_str::<ItemStruct>`
+- **Verification Rule**:
+  1. Parse output as a valid Rust struct AST item.
+  2. Assert the presence of `#[derive(Component)]` or `#[derive(..., Component, ...)]`.
+  3. Verify all fields use idiomatic Rust types (no raw pointers or unmapped C++ types).
+- **Pass Criteria**: AST parse succeeds with code 0 and Bevy `Component` derive is confirmed.
+- **Escalation Action**: Escalate to Tier 2 on syntax failure or unmapped types.

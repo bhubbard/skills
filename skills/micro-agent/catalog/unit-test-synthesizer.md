@@ -56,3 +56,14 @@ mod tests {
     }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `cargo test` / `vitest` Isolated Runner
+- **Verification Rule**:
+  1. Inject generated unit tests alongside target function in a sandbox buffer.
+  2. Run `cargo test` (Rust) or `vitest run` (TypeScript).
+  3. Verify all 3 generated tests (happy path, boundary, error) execute and evaluate to true.
+- **Pass Criteria**: Generated test suite compiles and passes 100% of assertions against the pure function.
+- **Escalation Action**: If test suite fails to compile or assertions fail on correct logic, escalate to Tier 2.

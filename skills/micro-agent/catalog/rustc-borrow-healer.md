@@ -42,3 +42,13 @@ CONTEXT:
 -}
 +self.cache.entry(key).or_insert_with(compute);
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `cargo check --message-format=json`
+- **Verification Rule**:
+  1. Apply diff patch to source buffer.
+  2. Check compiler diagnostics: specifically verify `E0382` (moved value), `E0499` (multiple mutable borrows), or `E0502` (cannot borrow as mutable because borrowed as immutable) are cleared.
+- **Pass Criteria**: Borrow checker passes cleanly for the modified scope.
+- **Escalation Action**: Discard patch and escalate to Tier 2 on persistent borrow conflicts.

@@ -53,3 +53,14 @@ mod tests {
     }
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_file` + `cargo test`
+- **Verification Rule**:
+  1. Verify generated code contains `#[cfg(test)]` module and `#[test]` function attributes.
+  2. Verify GoogleTest/Catch2 assertions (`EXPECT_EQ`, `ASSERT_TRUE`) are accurately mapped to `assert_eq!`, `assert!`.
+  3. Execute `cargo test --test <name>` in isolated workspace.
+- **Pass Criteria**: Test code compiles cleanly and passes assertions against the ported function.
+- **Escalation Action**: Escalate to Tier 2 on compiler failure.

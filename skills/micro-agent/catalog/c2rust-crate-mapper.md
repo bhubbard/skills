@@ -47,3 +47,13 @@ rayon = "1.10"
 // spdlog::info!() -> tracing::info!()
 // tbb::parallel_for -> rayon::iter::IntoParallelIterator
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `toml::from_str` Validator
+- **Verification Rule**:
+  1. Parse output snippet with a TOML parser.
+  2. Verify all mapped crates exist and specify valid version constraints or features (e.g. `serde = { version = "1.0", features = ["derive"] }`).
+- **Pass Criteria**: Clean TOML parse with recognized crate names.
+- **Escalation Action**: If crate mapping is ambiguous or TOML is invalid, escalate to Tier 2.

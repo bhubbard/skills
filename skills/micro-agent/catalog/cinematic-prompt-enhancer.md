@@ -27,3 +27,13 @@ A sleek cybernetic falcon flying over Tokyo at twilight
 ```text
 Cinematic 35mm film, f/1.8 aperture, an intricate chrome cybernetic falcon soaring smoothly above neon-lit Shinjuku skyscrapers at twilight, reflections on wet asphalt streets below, volumetric cyan and magenta fog, high dynamic range, 24fps fluid motion blur.
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: Token Counter & Technical Keyword Density Validator
+- **Verification Rule**:
+  1. Output token budget ceiling: total tokens must be $\le 300$ tokens.
+  2. Keyword density assertion: output must contain $\ge 2$ professional camera/lighting descriptors (e.g., `35mm`, `anamorphic`, `chiaroscuro`, `volumetric`, `ISO`, `diffused lighting`, `f/1.8`).
+- **Pass Criteria**: Token budget respected and technical keyword density satisfied.
+- **Escalation Action**: Retry with strict prompt constraints or fallback to original prompt.

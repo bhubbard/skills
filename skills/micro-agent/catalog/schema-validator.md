@@ -33,3 +33,13 @@ Do not output markdown code fences, comments, or explanations.
   "tags": ["video", "generative"]
 }
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `serde_json::from_str::<serde_json::Value>`
+- **Verification Rule**:
+  1. Parse output string with `serde_json`.
+  2. Verify zero trailing characters, syntax errors, or unescaped tokens.
+- **Pass Criteria**: Successful JSON deserialization with exit code 0.
+- **Escalation Action**: Escalate to Tier 2 if output fails JSON parsing.

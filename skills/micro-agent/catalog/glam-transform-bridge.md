@@ -32,3 +32,13 @@ let view_matrix = glam::Mat4::look_at_rh(eye, target, up);
 let pitch_adjust = glam::Mat4::from_rotation_x(15.0f32.to_radians());
 let final_view = pitch_adjust * view_matrix;
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: `syn::parse_file` + `cargo check` (with `glam` dependency)
+- **Verification Rule**:
+  1. AST parse ensures valid Rust syntax.
+  2. Type assertions: ensure output correctly uses `glam::Mat4`, `glam::Quat`, `glam::Vec3` with correct constructor signatures (e.g. `Mat4::from_rotation_translation`).
+- **Pass Criteria**: Compiles cleanly with `glam` types without compiler type mismatch.
+- **Escalation Action**: Escalate to Tier 2.

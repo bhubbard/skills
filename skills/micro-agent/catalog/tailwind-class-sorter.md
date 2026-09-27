@@ -31,3 +31,16 @@ text-white bg-slate-900 rounded-xl p-6 flex shadow-lg items-center gap-4 hover:b
 ```text
 flex items-center gap-4 w-full p-6 text-white bg-slate-900 rounded-xl shadow-lg hover:bg-slate-800
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: Set Equivalence Invariant Checker
+- **Verification Rule**:
+  1. Tokenize input and output strings into class sets:
+     `set_in = Set(input.split())`
+     `set_out = Set(output.split())`
+  2. Invariant Assertion: `set_in == set_out`.
+     (Zero classes dropped, zero classes hallucinated).
+- **Pass Criteria**: Exact set equality between input and output classes.
+- **Escalation Action**: If `set_in != set_out`, immediately reject output and return original input classes.

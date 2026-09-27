@@ -50,3 +50,14 @@ ALTER TABLE video_jobs ADD COLUMN duration_ms INTEGER;
 
 CREATE INDEX IF NOT EXISTS idx_video_jobs_status_seed ON video_jobs(status, seed);
 ```
+
+---
+
+## Verification Harness
+- **Validator Engine**: In-Memory SQLite Engine (`sqlite3 :memory:`)
+- **Verification Rule**:
+  1. Execute output DDL against an in-memory SQLite database:
+     `sqlite3 :memory: < generated_migration.sql`
+  2. Verify all `CREATE TABLE`, `ALTER TABLE`, and `CREATE INDEX` statements execute with exit code 0.
+- **Pass Criteria**: In-memory SQLite execution succeeds with zero errors.
+- **Escalation Action**: If SQLite syntax error is raised, reject migration and escalate to Tier 2.
