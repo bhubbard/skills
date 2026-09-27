@@ -75,23 +75,33 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 
 ---
 
-## 📚 Complete Micro-Agent Catalog (17 Agents)
+## 📚 Complete Micro-Agent Catalog (35 Agents)
 
 | Micro-Agent | Primary Cluster | Role & Responsibility | Measured Tokens |
 | :--- | :--- | :--- | :--- |
 | [`cinematic-prompt-enhancer`](catalog/cinematic-prompt-enhancer.md) | Generative MLX | Expands raw prompts into 35mm cinematic lighting & camera specs | 258 tokens |
+| [`mlx-safetensors-key-mapper`](catalog/mlx-safetensors-key-mapper.md) | Generative MLX | Maps PyTorch/Diffusers state_dict keys to MLX flattened/native keys | 260 tokens |
+| [`flow-matching-sigma-calculator`](catalog/flow-matching-sigma-calculator.md) | Generative MLX | Computes shifted discrete sigma sequences for flow matching schedulers | 210 tokens |
+| [`lora-delta-calculator`](catalog/lora-delta-calculator.md) | Generative MLX | Calculates LoRA rank, alpha, and scaling factor for matrix delta fusion | 230 tokens |
 | [`hyperframes-motion-designer`](catalog/hyperframes-motion-designer.md) | HyperFrames | Generates mathematical Bezier & spring progress logic for `window.__hf` | 332 tokens |
 | [`comfyui-node-rewirer`](catalog/comfyui-node-rewirer.md) | ComfyUI / LTX | Verifies socket type parity and links graph nodes | 227 tokens |
 | [`bevy-component-scaffolder`](catalog/bevy-component-scaffolder.md) | Game Engine / ECS | Converts C++/GDScript gameplay structs into Bevy ECS components | 272 tokens |
-| [`rustc-borrow-healer`](catalog/rustc-borrow-healer.md) | Rust Systems | Resolves E0382, E0499, and E0502 borrow-checker diagnostics | 256 tokens |
-| [`rust-compiler-healer`](catalog/rust-compiler-healer.md) | Rust Systems | One-shot patch generator for syntax and type mismatch errors | 219 tokens |
 | [`glam-transform-bridge`](catalog/glam-transform-bridge.md) | Game Physics | Synthesizes `glam::Mat4` and `glam::Quat` affine transformations | 252 tokens |
+| [`spring-physics-converter`](catalog/spring-physics-converter.md) | Motion Design | Converts physical spring triplets to designer response/damping parameters | 280 tokens |
+| [`mobile-tap-safety-fixer`](catalog/mobile-tap-safety-fixer.md) | Mobile Native | Patches buttons with touch-action, tap-highlight suppression, and 44px min-size | 250 tokens |
+| [`layout-shift-cls-healer`](catalog/layout-shift-cls-healer.md) | Web Performance | Injects explicit aspect-ratio and dimensions to guarantee CLS = 0 | 240 tokens |
 | [`tailwind-class-sorter`](catalog/tailwind-class-sorter.md) | Frontend CSS | Reorders utility classes by box-model cascade specificity | 240 tokens |
 | [`accessible-alt-text`](catalog/accessible-alt-text.md) | A11y & SEO | Generates concise WCAG 2.2 AA compliant image descriptions | 244 tokens |
 | [`natural-to-awk`](catalog/natural-to-awk.md) | CLI & Logs | Translates natural-language log extraction into single-line `awk` commands | 194 tokens |
 | [`astro-schema-ld-scaffolder`](catalog/astro-schema-ld-scaffolder.md) | Astro Web | Generates valid Schema.org JSON-LD `<script>` graphs from frontmatter | 295 tokens |
 | [`hydration-island-advisor`](catalog/hydration-island-advisor.md) | Astro Web | Recommends optimal island hydration directives (`client:visible`, etc.) | 282 tokens |
 | [`cloudflare-d1-migration-maker`](catalog/cloudflare-d1-migration-maker.md) | Cloudflare Edge | Generates forward SQLite DDL migrations from TypeScript entity diffs | 338 tokens |
+| [`wrangler-binding-auditor`](catalog/wrangler-binding-auditor.md) | Cloudflare Edge | Audits Worker code against wrangler.toml to identify missing bindings | 280 tokens |
+| [`turnstile-edge-validator`](catalog/turnstile-edge-validator.md) | Edge Security | Generates zero-dependency Turnstile siteverify token validation functions | 320 tokens |
+| [`op-secret-reference-scrubber`](catalog/op-secret-reference-scrubber.md) | Secrets & Security | Sanitizes plaintext secrets into canonical `op://vault/item/field` references | 230 tokens |
+| [`op-dotenv-injector`](catalog/op-dotenv-injector.md) | Secrets & Security | Generates `op run` command strings and injected `.env.op` templates | 260 tokens |
+| [`leaddocket-webhook-triage-parser`](catalog/leaddocket-webhook-triage-parser.md) | Legal CRM | Normalizes raw LeadDocket webhook intake payloads into structured JSON | 280 tokens |
+| [`filevine-custom-field-sanitizer`](catalog/filevine-custom-field-sanitizer.md) | Legal Tech | Sanitizes custom field labels into camelCase Filevine selector codes | 210 tokens |
 | [`conventional-committer`](catalog/conventional-committer.md) | Git Engineering | Synthesizes Conventional Commit messages from `git diff --stat` | 273 tokens |
 | [`unit-test-synthesizer`](catalog/unit-test-synthesizer.md) | Testing / QA | Synthesizes happy-path, boundary, and error tests for a single function | 328 tokens |
 | [`c2rust-function-porter`](catalog/c2rust-function-porter.md) | Code Porting | Transpiles isolated C++/C#/Python functions into idiomatic safe Rust | 351 tokens |
@@ -99,6 +109,8 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 | [`c2rust-type-scaffolder`](catalog/c2rust-type-scaffolder.md) | Code Porting | Maps C++ structs, enums, and smart pointers to idiomatic Rust types | 345 tokens |
 | [`c2rust-crate-mapper`](catalog/c2rust-crate-mapper.md) | Code Porting | Maps C++ `#include` headers to modern Rust crates with `Cargo.toml` lines | 321 tokens |
 | [`cpp-oop-to-data-oriented`](catalog/cpp-oop-to-data-oriented.md) | Code Porting | Converts C++ OOP virtual class hierarchies into Rust Data-Oriented enums | 432 tokens |
+| [`rust-compiler-healer`](catalog/rust-compiler-healer.md) | Rust Systems | One-shot patch generator for syntax and type mismatch errors | 219 tokens |
+| [`rustc-borrow-healer`](catalog/rustc-borrow-healer.md) | Rust Systems | Resolves E0382, E0499, and E0502 borrow-checker diagnostics | 256 tokens |
 | [`rustc-error-burn-down`](catalog/rustc-error-burn-down.md) | Code Porting | Generates surgical 1-line patches for specific `rustc` diagnostic errors | 343 tokens |
 | [`ast-refactor-transformer`](catalog/ast-refactor-transformer.md) | Refactoring | Replaces deprecated API patterns with modern idioms | 171 tokens |
 | [`schema-validator`](catalog/schema-validator.md) | Data Quality | Heals corrupted or truncated JSON/YAML payloads | 157 tokens |
