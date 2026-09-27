@@ -51,27 +51,52 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 ### 1. The Healer (Compiler & Lint Fixer)
 - **Role**: Takes a compiler error diagnostic (`rustc`, `tsc`, `clippy`) and 15–30 surrounding code lines.
 - **Output**: Unified patch or replacement lines.
-- **Example**: [`catalog/rust-compiler-healer.md`](catalog/rust-compiler-healer.md) (~480 tokens total).
+- **Example**: [`catalog/rust-compiler-healer.md`](catalog/rust-compiler-healer.md), [`catalog/rustc-borrow-healer.md`](catalog/rustc-borrow-healer.md).
 
 ### 2. The Synthesizer (Tests & Documentation)
 - **Role**: Takes an isolated struct/function signature and generates 3 edge-case tests or docstrings.
 - **Output**: Code block with `#[test]` or standard doc comments.
-- **Example**: [`catalog/unit-test-synthesizer.md`](catalog/unit-test-synthesizer.md) (~850 tokens total).
+- **Example**: [`catalog/unit-test-synthesizer.md`](catalog/unit-test-synthesizer.md).
 
 ### 3. The Committer (Changelog & Commits)
 - **Role**: Takes `git diff --stat` and key diff chunks; produces conventional commit message.
 - **Output**: `feat(scope): concise summary` + 3 bullet points.
-- **Example**: [`catalog/conventional-committer.md`](catalog/conventional-committer.md) (~600 tokens total).
+- **Example**: [`catalog/conventional-committer.md`](catalog/conventional-committer.md).
 
 ### 4. The Transformer (AST & API Refactor)
 - **Role**: Rewrites deprecated function calls or transforms one data structure into another.
 - **Output**: Clean replacement code.
-- **Example**: [`catalog/ast-refactor-transformer.md`](catalog/ast-refactor-transformer.md) (~350 tokens total).
+- **Example**: [`catalog/ast-refactor-transformer.md`](catalog/ast-refactor-transformer.md), [`catalog/glam-transform-bridge.md`](catalog/glam-transform-bridge.md).
 
 ### 5. The Schema Validator & Repairer
 - **Role**: Takes malformed or incomplete JSON/YAML and repairs it to conform to a target schema.
 - **Output**: Strictly valid JSON with zero conversational commentary.
-- **Example**: [`catalog/schema-validator.md`](catalog/schema-validator.md) (~400 tokens total).
+- **Example**: [`catalog/schema-validator.md`](catalog/schema-validator.md), [`catalog/astro-schema-ld-scaffolder.md`](catalog/astro-schema-ld-scaffolder.md).
+
+---
+
+## 📚 Complete Micro-Agent Catalog (17 Agents)
+
+| Micro-Agent | Primary Cluster | Role & Responsibility | Measured Tokens |
+| :--- | :--- | :--- | :--- |
+| [`cinematic-prompt-enhancer`](catalog/cinematic-prompt-enhancer.md) | Generative MLX | Expands raw prompts into 35mm cinematic lighting & camera specs | 258 tokens |
+| [`hyperframes-motion-designer`](catalog/hyperframes-motion-designer.md) | HyperFrames | Generates mathematical Bezier & spring progress logic for `window.__hf` | 332 tokens |
+| [`comfyui-node-rewirer`](catalog/comfyui-node-rewirer.md) | ComfyUI / LTX | Verifies socket type parity and links graph nodes | 227 tokens |
+| [`bevy-component-scaffolder`](catalog/bevy-component-scaffolder.md) | Game Engine / ECS | Converts C++/GDScript gameplay structs into Bevy ECS components | 272 tokens |
+| [`rustc-borrow-healer`](catalog/rustc-borrow-healer.md) | Rust Systems | Resolves E0382, E0499, and E0502 borrow-checker diagnostics | 256 tokens |
+| [`rust-compiler-healer`](catalog/rust-compiler-healer.md) | Rust Systems | One-shot patch generator for syntax and type mismatch errors | 219 tokens |
+| [`glam-transform-bridge`](catalog/glam-transform-bridge.md) | Game Physics | Synthesizes `glam::Mat4` and `glam::Quat` affine transformations | 252 tokens |
+| [`tailwind-class-sorter`](catalog/tailwind-class-sorter.md) | Frontend CSS | Reorders utility classes by box-model cascade specificity | 240 tokens |
+| [`accessible-alt-text`](catalog/accessible-alt-text.md) | A11y & SEO | Generates concise WCAG 2.2 AA compliant image descriptions | 244 tokens |
+| [`natural-to-awk`](catalog/natural-to-awk.md) | CLI & Logs | Translates natural-language log extraction into single-line `awk` commands | 194 tokens |
+| [`astro-schema-ld-scaffolder`](catalog/astro-schema-ld-scaffolder.md) | Astro Web | Generates valid Schema.org JSON-LD `<script>` graphs from frontmatter | 295 tokens |
+| [`hydration-island-advisor`](catalog/hydration-island-advisor.md) | Astro Web | Recommends optimal island hydration directives (`client:visible`, etc.) | 282 tokens |
+| [`cloudflare-d1-migration-maker`](catalog/cloudflare-d1-migration-maker.md) | Cloudflare Edge | Generates forward SQLite DDL migrations from TypeScript entity diffs | 338 tokens |
+| [`conventional-committer`](catalog/conventional-committer.md) | Git Engineering | Synthesizes Conventional Commit messages from `git diff --stat` | 273 tokens |
+| [`unit-test-synthesizer`](catalog/unit-test-synthesizer.md) | Testing / QA | Synthesizes happy-path, boundary, and error tests for a single function | 328 tokens |
+| [`ast-refactor-transformer`](catalog/ast-refactor-transformer.md) | Refactoring | Replaces deprecated API patterns with modern idioms | 171 tokens |
+| [`schema-validator`](catalog/schema-validator.md) | Data Quality | Heals corrupted or truncated JSON/YAML payloads | 157 tokens |
+
 
 ---
 
