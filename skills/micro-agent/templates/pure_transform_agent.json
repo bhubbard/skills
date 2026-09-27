@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "micro_agent_name",
+  "version": "1.0.0",
+  "budget": {
+    "max_total_tokens": 4000,
+    "system_prompt_tokens": 200,
+    "max_input_tokens": 2500,
+    "max_output_tokens": 1000
+  },
+  "runtime": {
+    "engine": "apfel-rs",
+    "fallback": "local-llm",
+    "temperature": 0.1,
+    "top_p": 0.95
+  },
+  "interface": {
+    "input_type": "text/plain",
+    "output_type": "text/x-diff"
+  }
+}
