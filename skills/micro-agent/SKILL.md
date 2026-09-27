@@ -118,9 +118,45 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 
 ---
 
+## 🏛️ The 5-Pillar Architecture Evolution
+
+To eliminate model hallucinations, context blindness, prompt rot, and orchestration latency, the micro-agent framework enforces five architectural pillars:
+
+### 1. The Tier 0 Rule (Zero-Token Deterministic Engine)
+If a task can be expressed as a pure function, closed-form math equation, or regular expression, **an LLM is strictly banned from executing it**.
+- Dedicated tool: [`tools/tier0_deterministic.py`](tools/tier0_deterministic.py)
+- Features: Flow matching sigmas (nanoseconds), Filevine camelCase sanitization (microseconds), Apple fluid spring physics calculations, LoRA scale multipliers, and Tailwind CSS cascade sorting.
+
+### 2. Guaranteed Output Reliability via Grammar-Guided Sampling
+Small models (1B–3B) must never output free-form text when structured data is expected.
+- Documentation: [`references/grammar_guided_decoding.md`](references/grammar_guided_decoding.md)
+- Logit Masking: In `apfel-rs` and `mlx-lm`, token logits are constrained via GBNF or JSON Schema state machines, making syntax errors, missing braces, and conversational pleasantries physically impossible.
+
+### 3. AST-Hydrated Slices (Eliminating Context Blindness)
+Never pass a blind 15-line code window to a code repair micro-agent.
+- Documentation: [`references/ast_hydrated_slicing.md`](references/ast_hydrated_slicing.md)
+- The Dependency Triad: Every code micro-agent receives (1) the diagnostic error span, (2) the enclosing function AST call site, and (3) the target struct/trait definition site.
+- Auto-Escalation Gate: If an error crosses $>2$ files or external crate trait bounds, the micro-agent automatically bails and escalates to the frontier workspace agent.
+
+### 4. Automated CI Regression Suite (`eval_catalog.py`)
+Prompts without regression tests rot silently over time.
+- Test runner: [`scripts/eval_catalog.py`](scripts/eval_catalog.py)
+- Audits all 35 catalog markdown specifications in CI: verifies the 4K envelope, validates output contract syntax, tests Tier 0 deterministic tool parity, and asserts verification harness integrity.
+- Run locally or in GitHub Actions:
+  ```bash
+  python3 skills/micro-agent/scripts/eval_catalog.py
+  ```
+
+### 5. Orchestration Modes (Eliminating the Multi-Hop Tax)
+Never chain 6 micro-agents in serial to solve a multi-file system task.
+- Documentation: [`references/orchestration_patterns.md`](references/orchestration_patterns.md)
+- The Frontier Toolbelt: The Frontier Model (Claude / Gemini) maintains the 200k repository context and system architecture, invoking micro-agents and Tier 0 tools as **instantaneous zero-cost worker tools** within its tool loop.
+
+---
+
 ## 🔍 Continuous Discovery: Identifying Candidates Across Projects
 
-While working in any repository (`~/PROJECTS`), proactively scan for operations that can be codified into micro-agents. 
+While working in any repository (`~/PROJECTS`), proactively scan for operations that can be codified into micro-agents or Tier 0 tools. 
 
 ### The 4-Filter Discovery Heuristic:
 1. **Bounded Context**: Can the input payload be trimmed to $< 2,000$ tokens without losing critical context?
@@ -136,7 +172,7 @@ While working in any repository (`~/PROJECTS`), proactively scan for operations 
 
 On Apple Silicon machines:
 1. **Stage 0 (`zev-rs`)**: Ultra-fast calibrated probabilistic routing in **5.8 microseconds** with zero tokens.
-2. **Stage 1 (`apfel-rs` Micro-Agent + Verification Harness)**: On-device execution via Apple FoundationModels / CoreML in **< 100 milliseconds** within the 4k-token budget. Deterministic harness checks output (AST, compiler, regex, schema); if valid, commit immediately.
+2. **Stage 1 (`apfel-rs` Micro-Agent + Verification Harness)**: On-device execution via Apple FoundationModels / CoreML in **< 100 milliseconds** within the 4k-token budget with grammar-guided logit masking. Deterministic harness checks output; if valid, commit immediately.
 3. **Stage 2 (Frontier Subagent)**: Escalate to Claude / Gemini only when Stage 1 verification fails or when multi-file repo synthesis exceeds 4,000 tokens.
 
 Read [`references/apfel_integration.md`](references/apfel_integration.md) for concrete Rust/Swift bridging code.
@@ -145,16 +181,13 @@ Read [`references/apfel_integration.md`](references/apfel_integration.md) for co
 
 ## 🛠️ Step-by-Step: How to Build a New Micro-Agent
 
-1. **Define the Single Responsibility**: State exactly one input type and one output type.
-2. **Write the Lean System Prompt**: Use [`templates/micro_agent_prompt.md`](templates/micro_agent_prompt.md) to keep it under 200 tokens.
-3. **Establish Input Pruning Rules**: Define how the caller extracts only the relevant lines (e.g. `sed`, AST parser, compiler error regex).
-4. **Validate Token Budget**: Run the token counter utility:
+1. **Check Tier 0 First**: If the operation is arithmetic or regex, write a deterministic function in `tools/tier0_deterministic.py`.
+2. **Define the Single Responsibility**: State exactly one input type and one output type.
+3. **Write the Lean System Prompt**: Use [`templates/micro_agent_prompt.md`](templates/micro_agent_prompt.md) to keep it under 200 tokens.
+4. **Establish AST Triad Input Pruning**: Extract the diagnostic, call site AST, and definition site AST.
+5. **Run the CI Evaluation Suite**:
    ```bash
-   python3 skills/micro-agent/scripts/token_counter.py \
-     --system prompt.md \
-     --input sample_input.txt \
-     --output sample_output.txt
+   python3 skills/micro-agent/scripts/eval_catalog.py
    ```
-5. **Define Deterministic Verification Harness**: Specify the automated validator engine (`syn`, `cargo check`, `serde_json`, regex, in-memory SQLite) and clear pass/escalation criteria.
 6. **Publish to Catalog**: Commit the new micro-agent to `skills/micro-agent/catalog/`.
 
