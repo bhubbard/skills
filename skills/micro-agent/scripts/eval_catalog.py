@@ -24,7 +24,11 @@ try:
         filevine_custom_field_sanitize,
         spring_physics_convert,
         lora_delta_scale,
-        tailwind_class_sort
+        tailwind_class_sort,
+        e164_phone_normalize,
+        water_dispersion_omega,
+        pacejka_magic_formula,
+        tooth_number_convert
     )
 except ImportError:
     pass
@@ -144,6 +148,25 @@ def main():
             res = spring_physics_convert(0.4, 0.85)
             assert res["stiffness"] == 246.74, "Spring stiffness calculation mismatch"
 
+        elif name == "e164-phone-normalizer":
+            phone_res = e164_phone_normalize("(800) 522-6222 ext 104")
+            assert phone_res["e164"] == "+18005226222", f"E.164 mismatch: {phone_res['e164']}"
+            assert phone_res["is_toll_free"] is True, "Toll-free detection mismatch"
+
+        elif name == "water-spectrum-dispersion-calculator":
+            disp_res = water_dispersion_omega(2.5, 1.6)
+            assert disp_res["wavelength_m"] > 2.5, "Wavelength calculation mismatch"
+            assert disp_res["quantized_omega"] > 0.0, "Quantized omega mismatch"
+
+        elif name == "pacejka-tire-friction-calculator":
+            pacejka_res = pacejka_magic_formula(4.5, 4000.0)
+            assert pacejka_res["lateral_force_fy_n"] > 3000.0, "Pacejka lateral force mismatch"
+
+        elif name == "opendental-tooth-number-normalizer":
+            tooth_res = tooth_number_convert("19", "Universal")
+            assert tooth_res["fdi"] == "36", f"FDI tooth conversion mismatch: {tooth_res['fdi']}"
+            assert tooth_res["quadrant"] == "Lower Left", "Quadrant identification mismatch"
+
         passed_count += 1
         print(f"  ✓ {name:<38} [Tokens: {total_tokens:>4}/4000] [{parsed['output_format']:^6}]")
 
@@ -156,7 +179,7 @@ def main():
             print(f"  • {err}")
         sys.exit(1)
     else:
-        print("\n🎉 ALL 35 MICRO-AGENTS PASSED EVALUATION & TOKEN BUDGET AUDIT!")
+        print(f"\n🎉 ALL {len(catalog_files)} MICRO-AGENTS PASSED EVALUATION & TOKEN BUDGET AUDIT!")
         sys.exit(0)
 
 

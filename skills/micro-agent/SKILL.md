@@ -75,7 +75,7 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 
 ---
 
-## 📚 Complete Micro-Agent Catalog (35 Agents)
+## 📚 Complete Micro-Agent Catalog (51 Agents)
 
 | Micro-Agent | Primary Cluster | Role & Responsibility | Measured Tokens |
 | :--- | :--- | :--- | :--- |
@@ -92,16 +92,32 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 | [`layout-shift-cls-healer`](catalog/layout-shift-cls-healer.md) | Web Performance | Injects explicit aspect-ratio and dimensions to guarantee CLS = 0 | 240 tokens |
 | [`tailwind-class-sorter`](catalog/tailwind-class-sorter.md) | Frontend CSS | Reorders utility classes by box-model cascade specificity | 240 tokens |
 | [`accessible-alt-text`](catalog/accessible-alt-text.md) | A11y & SEO | Generates concise WCAG 2.2 AA compliant image descriptions | 244 tokens |
+| [`edge-vision-alt-tagger`](catalog/edge-vision-alt-tagger.md) | Cloudflare Edge AI | Generates concise WCAG 2.2 AA alt text and SEO image title from vision tags | 250 tokens |
 | [`natural-to-awk`](catalog/natural-to-awk.md) | CLI & Logs | Translates natural-language log extraction into single-line `awk` commands | 194 tokens |
 | [`astro-schema-ld-scaffolder`](catalog/astro-schema-ld-scaffolder.md) | Astro Web | Generates valid Schema.org JSON-LD `<script>` graphs from frontmatter | 295 tokens |
 | [`hydration-island-advisor`](catalog/hydration-island-advisor.md) | Astro Web | Recommends optimal island hydration directives (`client:visible`, etc.) | 282 tokens |
 | [`cloudflare-d1-migration-maker`](catalog/cloudflare-d1-migration-maker.md) | Cloudflare Edge | Generates forward SQLite DDL migrations from TypeScript entity diffs | 338 tokens |
+| [`cloudflare-waf-rule-builder`](catalog/cloudflare-waf-rule-builder.md) | Cloudflare Edge | Translates natural security policies into Wirefilter / Ruleset Engine expressions | 270 tokens |
+| [`edge-cache-control-optimizer`](catalog/edge-cache-control-optimizer.md) | Cloudflare Edge | Synthesizes optimal Cache-Control, CDN-Cache-Control, and Cache-Tag headers | 260 tokens |
 | [`wrangler-binding-auditor`](catalog/wrangler-binding-auditor.md) | Cloudflare Edge | Audits Worker code against wrangler.toml to identify missing bindings | 280 tokens |
 | [`turnstile-edge-validator`](catalog/turnstile-edge-validator.md) | Edge Security | Generates zero-dependency Turnstile siteverify token validation functions | 320 tokens |
 | [`op-secret-reference-scrubber`](catalog/op-secret-reference-scrubber.md) | Secrets & Security | Sanitizes plaintext secrets into canonical `op://vault/item/field` references | 230 tokens |
 | [`op-dotenv-injector`](catalog/op-dotenv-injector.md) | Secrets & Security | Generates `op run` command strings and injected `.env.op` templates | 260 tokens |
 | [`leaddocket-webhook-triage-parser`](catalog/leaddocket-webhook-triage-parser.md) | Legal CRM | Normalizes raw LeadDocket webhook intake payloads into structured JSON | 280 tokens |
 | [`filevine-custom-field-sanitizer`](catalog/filevine-custom-field-sanitizer.md) | Legal Tech | Sanitizes custom field labels into camelCase Filevine selector codes | 210 tokens |
+| [`opendental-cdt-code-mapper`](catalog/opendental-cdt-code-mapper.md) | Dental EHR | Maps clinical dental procedure terms to canonical ADA CDT procedure codes | 320 tokens |
+| [`opendental-tooth-number-normalizer`](catalog/opendental-tooth-number-normalizer.md) | Dental EHR | Normalizes tooth IDs between Universal (1-32, A-T), FDI (11-85), and Palmer | 220 tokens |
+| [`serp-rank-delta-calculator`](catalog/serp-rank-delta-calculator.md) | SERP & Tracking | Computes rank position displacement, volatility scores, and SERP features | 280 tokens |
+| [`keyword-search-intent-classifier`](catalog/keyword-search-intent-classifier.md) | SEO & Search | Classifies queries into Informational, Navigational, Commercial, Transactional | 240 tokens |
+| [`xml-sitemap-index-validator`](catalog/xml-sitemap-index-validator.md) | Technical SEO | Audits XML sitemaps for W3C schema compliance, URL counts, and lastmod dates | 270 tokens |
+| [`fonoster-call-flow-scaffolder`](catalog/fonoster-call-flow-scaffolder.md) | Telephony | Scaffolds Fonoster Voice JavaScript handlers with speech and DTMF gathers | 340 tokens |
+| [`e164-phone-normalizer`](catalog/e164-phone-normalizer.md) | Telephony | Canonicalizes phone numbers to ITU-T E.164 with toll-free detection | 230 tokens |
+| [`decision-model-benchmark-evaluator`](catalog/decision-model-benchmark-evaluator.md) | Decision Models | Evaluates model choices, Bradley-Terry probabilities, and transitivity checks | 290 tokens |
+| [`timesfm-forecast-patch-tokenizer`](catalog/timesfm-forecast-patch-tokenizer.md) | Foundation Models | Normalizes time-series and tokenizes series into fixed-length forecast patches | 290 tokens |
+| [`obj-mesh-normal-recalculator`](catalog/obj-mesh-normal-recalculator.md) | 3D Geometry | Computes area-weighted vertex normals from triangle mesh faces | 310 tokens |
+| [`modular-snap-socket-aligner`](catalog/modular-snap-socket-aligner.md) | 3D Kitbash | Computes affine rigid transform (translation + quat) to snap modular sockets | 280 tokens |
+| [`water-spectrum-dispersion-calculator`](catalog/water-spectrum-dispersion-calculator.md) | Fluid Physics | Computes shallow water wave dispersion frequency and 60-second loop quantization | 240 tokens |
+| [`pacejka-tire-friction-calculator`](catalog/pacejka-tire-friction-calculator.md) | Vehicle Dynamics | Evaluates Pacejka Magic Formula for lateral cornering grip and tire forces | 260 tokens |
 | [`conventional-committer`](catalog/conventional-committer.md) | Git Engineering | Synthesizes Conventional Commit messages from `git diff --stat` | 273 tokens |
 | [`unit-test-synthesizer`](catalog/unit-test-synthesizer.md) | Testing / QA | Synthesizes happy-path, boundary, and error tests for a single function | 328 tokens |
 | [`c2rust-function-porter`](catalog/c2rust-function-porter.md) | Code Porting | Transpiles isolated C++/C#/Python functions into idiomatic safe Rust | 351 tokens |
@@ -115,7 +131,6 @@ Micro-agents strictly adhere to the **Single Responsibility Principle (SRP)**. N
 | [`ast-refactor-transformer`](catalog/ast-refactor-transformer.md) | Refactoring | Replaces deprecated API patterns with modern idioms | 171 tokens |
 | [`schema-validator`](catalog/schema-validator.md) | Data Quality | Heals corrupted or truncated JSON/YAML payloads | 157 tokens |
 
-
 ---
 
 ## 🏛️ The 5-Pillar Architecture Evolution
@@ -125,7 +140,7 @@ To eliminate model hallucinations, context blindness, prompt rot, and orchestrat
 ### 1. The Tier 0 Rule (Zero-Token Deterministic Engine)
 If a task can be expressed as a pure function, closed-form math equation, or regular expression, **an LLM is strictly banned from executing it**.
 - Dedicated tool: [`tools/tier0_deterministic.py`](tools/tier0_deterministic.py)
-- Features: Flow matching sigmas (nanoseconds), Filevine camelCase sanitization (microseconds), Apple fluid spring physics calculations, LoRA scale multipliers, and Tailwind CSS cascade sorting.
+- Features: Flow matching sigmas (nanoseconds), Filevine camelCase sanitization (microseconds), Apple fluid spring physics calculations, LoRA scale multipliers, Tailwind CSS cascade sorting, E.164 phone canonicalization, Pacejka tire friction, tooth notation conversion, and ocean wave dispersion.
 
 ### 2. Guaranteed Output Reliability via Grammar-Guided Sampling
 Small models (1B–3B) must never output free-form text when structured data is expected.
@@ -141,7 +156,7 @@ Never pass a blind 15-line code window to a code repair micro-agent.
 ### 4. Automated CI Regression Suite (`eval_catalog.py`)
 Prompts without regression tests rot silently over time.
 - Test runner: [`scripts/eval_catalog.py`](scripts/eval_catalog.py)
-- Audits all 35 catalog markdown specifications in CI: verifies the 4K envelope, validates output contract syntax, tests Tier 0 deterministic tool parity, and asserts verification harness integrity.
+- Audits all 51 catalog markdown specifications in CI: verifies the 4K envelope, validates output contract syntax, tests Tier 0 deterministic tool parity, and asserts verification harness integrity.
 - Run locally or in GitHub Actions:
   ```bash
   python3 skills/micro-agent/scripts/eval_catalog.py
