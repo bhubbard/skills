@@ -13,10 +13,10 @@ The `wp-blockmarkup-mcp` is a powerful local MCP server that gives AI assistants
    You can run `npx wp-blockmarkup-mcp` to use the server without a global install. To pin the version, configure your MCP client with `args: ["-y", "wp-blockmarkup-mcp@1.1.1"]`.
    
 2. **Indexing Sources:**
-   Before the server is useful, you must index your block sources. Run the CLI tool `wp-blocks source:add` to clone and index repositories:
-   *   **Gutenberg Core:** `npx wp-blocks source:add --name gutenberg --type github-public --repo https://github.com/WordPress/gutenberg --branch trunk`
-   *   **WooCommerce:** `npx wp-blocks source:add --name woocommerce-blocks --type github-public --repo https://github.com/woocommerce/woocommerce --subfolder plugins/woocommerce-blocks --branch trunk`
-   *   **Local Plugins:** `npx wp-blocks source:add --name my-local-blocks --type local-folder --path /path/to/wp-content/plugins/my-blocks`
+   Before the server is useful, you must index your block sources. Run the CLI binary provided by `wp-blockmarkup-mcp` to clone and index repositories:
+   *   **Gutenberg Core:** `npx -y --package=wp-blockmarkup-mcp@1.1.1 wp-blocks source:add --name gutenberg --type github-public --repo https://github.com/WordPress/gutenberg --branch trunk`
+   *   **WooCommerce:** `npx -y --package=wp-blockmarkup-mcp@1.1.1 wp-blocks source:add --name woocommerce-blocks --type github-public --repo https://github.com/woocommerce/woocommerce --subfolder plugins/woocommerce-blocks --branch trunk`
+   *   **Local Plugins:** `npx -y --package=wp-blockmarkup-mcp@1.1.1 wp-blocks source:add --name my-local-blocks --type local-folder --path /path/to/wp-content/plugins/my-blocks`
 
 3. **Incremental Updates:**
-   Use `npx wp-blocks index --source gutenberg` to re-fetch and incrementally update the SQLite database cache in `~/.wp-blockmarkup-mcp/`.
+   Use `npx -y --package=wp-blockmarkup-mcp@1.1.1 wp-blocks index --source gutenberg` to re-fetch and incrementally update the SQLite database cache in `~/.wp-blockmarkup-mcp/`.
